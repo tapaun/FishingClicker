@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace FishingClicker
 {
+    internal enum RodAction
+    {
+        Ultralight,
+        Light,
+        Medium,
+        MediumHeavy,
+        Heavy,
+        ExtraHeavy
+    }
     internal class CFishingRod : CEquipment, IRod
     {
         private string name;

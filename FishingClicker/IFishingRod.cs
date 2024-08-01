@@ -10,13 +10,4 @@ namespace FishingClicker
     {
         public decimal CastLine(IRod rod);
     }
-    internal enum RodAction
-    {
-        Ultralight,
-        Light,
-        Medium,
-        MediumHeavy,
-        Heavy,
-        ExtraHeavy
-    }
 }
