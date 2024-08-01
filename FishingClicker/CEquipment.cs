@@ -35,7 +35,7 @@ namespace FishingClicker
         Diamond
     }
     #endregion
-    internal class CEquipment : IEquipment
+    internal abstract class CEquipment : IEquipment
     {
         private Rarity rarity;
         private Level level;

@@ -8,6 +8,6 @@ namespace FishingClicker
 {
     internal interface IRod
     {
-        public decimal CastLine(IRod rod);
+        public decimal CastLine(decimal strengthMultiplier, decimal rarityMultiplier, decimal levelMultiplier);
     }
 }

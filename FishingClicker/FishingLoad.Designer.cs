@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.ButtonHighlight;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Location = new Point(144, 55);
+            label1.Name = "label1";
+            label1.Size = new Size(500, 294);
+            label1.TabIndex = 0;
             // 
             // FishingLoad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Name = "FishingLoad";
             Text = "FishingLoad";
             Load += FishingLoad_Load;
@@ -42,5 +53,7 @@
         }
 
         #endregion
+
+        private Label label1;
     }
 }

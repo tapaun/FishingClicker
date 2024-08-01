@@ -15,7 +15,7 @@ namespace FishingClicker
         Heavy,
         ExtraHeavy
     }
-    internal class CFishingRod : CEquipment, IRod
+    internal abstract class CFishingRod : CEquipment, IRod
     {
         private string name;
         private decimal strength;
@@ -49,14 +49,10 @@ namespace FishingClicker
         {
             return base.DisplayInfo() + ($" Name: {name} \n Strength: {strength} \n Rod Action: {category} \n");
         }
-        public decimal CastLine(IRod beginnerRod)
+        public virtual decimal CastLine(decimal strengthMultiplier, decimal rarityMultiplier, decimal levelMultiplier)
         {
-            Random random = new Random(10);
-            decimal minDistance = 0.5m;
-            decimal maxDistance = 10m;
-            decimal distanceCast = (decimal)random.NextDouble() * (maxDistance - minDistance) + minDistance;
-            return Strength * 0.1m * distanceCast + RarityDecimal()*0.75m + LevelDecimal()*0.2m;
+            decimal castLine = Strength * strengthMultiplier + RarityDecimal() * rarityMultiplier + LevelDecimal() * levelMultiplier;
+            return castLine;
         }
-
     }
 }
