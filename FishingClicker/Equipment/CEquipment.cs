@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.Design;
+using System.Xml.Serialization;
+using System.Xml;
+using System.IO;
 
-namespace FishingClicker
+namespace FishingClicker.Equipment
 {
     #region enums 
     //Rarity enum for each item we will be using
-    internal enum Rarity
+    public enum Rarity
     {
         Common,
         Uncommon,
@@ -18,7 +22,7 @@ namespace FishingClicker
         Legendary
     }
     //Level enum for each item we will be using
-    internal enum Level
+    public enum Level
     {
         LevelOne,
         LevelTwo,
@@ -26,7 +30,7 @@ namespace FishingClicker
         LevelFour,
         LevelFive
     }
-    internal enum Material
+    public enum Material
     {
         Wood,
         Stone,
@@ -35,40 +39,53 @@ namespace FishingClicker
         Diamond
     }
     #endregion
-    internal abstract class CEquipment : IEquipment
+    public abstract class CEquipment : IEquipment
     {
+        #region variables and constructor
+        private string name;
         private Rarity rarity;
         private Level level;
         private Material material;
 
-        public CEquipment(Rarity rarity, Level level, Material material)
+        public CEquipment(string name, Rarity rarity, Level level, Material material)
         {
+            this.name = name;
             this.rarity = rarity;
             this.level = level;
-            this.Material = material;
+            this.material = material;
         }
+        public CEquipment() { }
+        #endregion
 
-        public Rarity RarityValue { get => rarity; set => rarity = value;  }
+        #region getters and setters
+        [XmlElement("RarityValue")]
+        public Rarity RarityValue { get => rarity; set => rarity = value; }
+        [XmlElement("ItemLevel")]
         public Level ItemLevel { get => level; set => level = value; }
+        [XmlElement("Material")]
         public Material Material { get => material; set => material = value; }
+        [XmlElement("EquipmentName")]
+        public string EquipmentName { get => name; set => name = value; }
+        #endregion
 
+        #region methods
         public virtual string DisplayInfo()
         {
-            return ($"Material: {Material} \n Level: {level} \n Rarity: {rarity} \n");
+            return $"Material: {Material} \n Level: {level} \n Rarity: {rarity} \n";
         }
+
         public void Evolve()
         {
-            
+
             if (RarityValue == Rarity.Legendary)
             {
                 throw new InvalidOperationException("Cannot evolve beyond Legendary.");
             }
             RarityValue++;
         }
-
         public void Upgrade()
         {
-            if(ItemLevel == Level.LevelFive)
+            if (ItemLevel == Level.LevelFive)
             {
                 throw new InvalidOperationException("Cannot upgrade beyond Level 5.");
             }
@@ -128,5 +145,24 @@ namespace FishingClicker
                     return 1;
             }
         }
+        public virtual decimal MaterialDecimal()
+        {
+            switch (Material)
+            {
+                case Material.Wood:
+                    return 1;
+                case Material.Stone:
+                    return 1.5m;
+                case Material.Iron:
+                    return 2;
+                case Material.Gold:
+                    return 2.5m;
+                case Material.Diamond:
+                    return 3;
+                default:
+                    return 1;
+            }
+        }
+        #endregion
     }
 }

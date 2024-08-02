@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FishingClicker
+namespace FishingClicker.Equipment
 {
     internal interface IEquipment
     {
@@ -16,6 +16,7 @@ namespace FishingClicker
         public Material Material { get; }
         public decimal RarityDecimal();
         public decimal LevelDecimal();
+        public decimal MaterialDecimal();
         public string DisplayInfo();
     }
 }
