@@ -35,7 +35,7 @@
             // 
             label1.BackColor = SystemColors.ButtonHighlight;
             label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Location = new Point(144, 55);
+            label1.Location = new Point(169, 72);
             label1.Name = "label1";
             label1.Size = new Size(500, 294);
             label1.TabIndex = 0;

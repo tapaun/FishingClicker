@@ -11,7 +11,7 @@ using System.IO;
 
 namespace FishingClicker.Equipment
 {
-    #region enums 
+    #region Enums 
     //Rarity enum for each item we will be using
     public enum Rarity
     {
@@ -39,15 +39,15 @@ namespace FishingClicker.Equipment
         Diamond
     }
     #endregion
-    public abstract class CEquipment : IEquipment
+    public class CEquipment : IEquipment
     {
-        #region variables and constructor
+        #region Variables and Constructor
         private string name;
         private Rarity rarity;
         private Level level;
         private Material material;
 
-        public CEquipment(string name, Rarity rarity, Level level, Material material)
+        public CEquipment(string name, Rarity rarity, Level level=default, Material material=default)
         {
             this.name = name;
             this.rarity = rarity;
@@ -57,7 +57,7 @@ namespace FishingClicker.Equipment
         public CEquipment() { }
         #endregion
 
-        #region getters and setters
+        #region Getters and Setters
         [XmlElement("RarityValue")]
         public Rarity RarityValue { get => rarity; set => rarity = value; }
         [XmlElement("ItemLevel")]
@@ -68,7 +68,7 @@ namespace FishingClicker.Equipment
         public string EquipmentName { get => name; set => name = value; }
         #endregion
 
-        #region methods
+        #region Methods
         public virtual string DisplayInfo()
         {
             return $"Material: {Material} \n Level: {level} \n Rarity: {rarity} \n";

@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 
 namespace FishingClicker.Equipment
 {
-    #region enum
+    #region Enum
     //Rod action is basically a rod's durability/weight capacity
     public enum RodAction
     {
@@ -28,7 +28,7 @@ namespace FishingClicker.Equipment
     [Serializable]
     public class CFishingRod : CEquipment
     {
-        #region variables and constructor
+        #region Variables and Sonstructor
         private decimal strength;
         private RodAction category;
 
@@ -40,7 +40,7 @@ namespace FishingClicker.Equipment
         public CFishingRod() { }
         #endregion
 
-        #region getters setters
+        #region Getters and Setters
         //this should be used when applying maybe potions or random strength boost
         [XmlElement("Strength")]
         public decimal Strength { get => strength; set => strength = value; }
@@ -48,7 +48,7 @@ namespace FishingClicker.Equipment
         public RodAction Category { get => category; set => category = value; }
         #endregion
 
-        #region override methods for the decimal value of Rarity,Level and Material
+        #region Override methods - DecimalValue(Rarity,Level,Material)
         public override decimal RarityDecimal()
         {
             return base.RarityDecimal();
@@ -63,7 +63,7 @@ namespace FishingClicker.Equipment
         }
         #endregion
 
-        #region methods
+        #region Methods
         //Method for displaying a fishing rod's information
         public override string DisplayInfo()
         {
@@ -82,48 +82,54 @@ namespace FishingClicker.Equipment
     #region Beginner Rod class
     public class BeginnerRod : CFishingRod
     {
-
+        #region Constructor
         public BeginnerRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
         {
         }
         public BeginnerRod() { }
-
+        #endregion
+        #region Override method
         public override decimal CastLine(decimal strengthMultiplier = 1.2m, decimal rarityMultiplier = 1.25m, decimal levelMultiplier = 1.1m, decimal materialMultiplier = 1.1m)
         {
             return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
         }
+        #endregion
     }
     #endregion
 
     #region Intermediate Rod class
     public class IntermediateRod : CFishingRod
     {
-
+        #region Constructor
         public IntermediateRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
         {
         }
         public IntermediateRod() { }
-
+        #endregion
+        #region Override method
         public override decimal CastLine(decimal strengthMultiplier = 1.4m, decimal rarityMultiplier = 1.5m, decimal levelMultiplier = 1.2m, decimal materialMultiplier = 1.3m)
         {
             return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
         }
+        #endregion
     }
     #endregion
 
     #region Expert Rod class
     public class ExpertRod : CFishingRod
     {
-
+        #region Constructor
         public ExpertRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
         {
         }
         public ExpertRod() { }
-
+        #endregion
+        #region Override method
         public override decimal CastLine(decimal strengthMultiplier = 1.6m, decimal rarityMultiplier = 1.8m, decimal levelMultiplier = 1.4m, decimal materialMultiplier = 1.1m)
         {
             return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
         }
+        #endregion
     }
     #endregion
 }

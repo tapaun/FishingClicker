@@ -14,7 +14,7 @@ namespace FishingClicker
     [XmlRoot("Player")]
     public class Player
     {
-        #region variables and constructor
+        #region Variables and Constructor
         private string playerName;
         private int playerLevel;
         private int playerXP;
@@ -33,7 +33,7 @@ namespace FishingClicker
         }
         public Player() { }
         #endregion
-        #region getters setters
+        #region Getters and Setters
         public string PlayerName { get => playerName; set => playerName = value; }
         public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
         public int PlayerXP { get => playerXP; set => playerXP = value; }
@@ -44,13 +44,14 @@ namespace FishingClicker
         [XmlElement("FishingRod")]
         public CFishingRod FishingRod { get => fishingRod; set => fishingRod = value; }
         #endregion
-        #region methods
+        #region Methods
         public string displayPlayerInfo()
         {
             return $"Player name: {PlayerName}\n  Player Level: {PlayerLevel}\n Player XP: {PlayerXP}\n Player Gold: {PlayerGold} \n Player Rods: {FishingRod.DisplayInfo()}\n Player Materials: {PlayerMaterials}\n";
         }
         #endregion
     }
+    #region PlayerXML
     public class PlayerManager
     {
         public void SaveToFile(List<Player> players)
@@ -71,6 +72,8 @@ namespace FishingClicker
             }
         }
     }
+    #endregion
+    #region PlayerMaterials
     public class PlayerMaterials
     {
         private Material materials;
@@ -91,5 +94,5 @@ namespace FishingClicker
             return $"{Materials} : {MaterialsAmount}";
         }
     }
-
+    #endregion
 }
