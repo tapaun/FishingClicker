@@ -26,18 +26,18 @@ namespace FishingClicker.Equipment
     [XmlInclude(typeof(IntermediateRod))]
     [XmlInclude(typeof(ExpertRod))]
     [Serializable]
-    public class CFishingRod : CEquipment
+    public class FishingRod : Equipment
     {
         #region Variables and Sonstructor
         private decimal strength;
         private RodAction category;
 
-        public CFishingRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, itemLevel, material)
+        public FishingRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, itemLevel, material)
         {
             this.strength = strength;
             this.category = category;
         }
-        public CFishingRod() { }
+        public FishingRod() { }
         #endregion
 
         #region Getters and Setters
@@ -80,7 +80,7 @@ namespace FishingClicker.Equipment
     }
 
     #region Beginner Rod class
-    public class BeginnerRod : CFishingRod
+    public class BeginnerRod : FishingRod
     {
         #region Constructor
         public BeginnerRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
@@ -98,7 +98,7 @@ namespace FishingClicker.Equipment
     #endregion
 
     #region Intermediate Rod class
-    public class IntermediateRod : CFishingRod
+    public class IntermediateRod : FishingRod
     {
         #region Constructor
         public IntermediateRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
@@ -116,7 +116,7 @@ namespace FishingClicker.Equipment
     #endregion
 
     #region Expert Rod class
-    public class ExpertRod : CFishingRod
+    public class ExpertRod : FishingRod
     {
         #region Constructor
         public ExpertRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)

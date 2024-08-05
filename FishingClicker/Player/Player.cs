@@ -9,22 +9,24 @@ using System.Xml.Serialization;
 using FishingClicker.Equipment;
 using System.Runtime.Serialization;
 
-namespace FishingClicker
+namespace FishingClicker.Player
 {
     [XmlRoot("Player")]
     public class Player
     {
         #region Variables and Constructor
         private string playerName;
+        private string playerPassword;
         private int playerLevel;
         private int playerXP;
         private int playerGold;
         private List<PlayerMaterials> playerMaterials;
-        private CFishingRod fishingRod;
+        private List<FishingRod> fishingRod;
         //Player constructor
-        public Player(string playerName, int playerLevel, int playerXP, int playerGold, List<PlayerMaterials> playerMaterials, CFishingRod fishingRod)
+        public Player(string playerName, string playerPassword, int playerLevel, int playerXP, int playerGold, List<PlayerMaterials> playerMaterials, List<FishingRod> fishingRod)
         {
             this.playerName = playerName;
+            this.playerPassword = playerPassword;
             this.playerLevel = playerLevel;
             this.playerXP = playerXP;
             this.playerGold = playerGold;
@@ -35,6 +37,7 @@ namespace FishingClicker
         #endregion
         #region Getters and Setters
         public string PlayerName { get => playerName; set => playerName = value; }
+        public string PlayerPassword { get => playerPassword; set => playerPassword = value; }
         public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
         public int PlayerXP { get => playerXP; set => playerXP = value; }
         public int PlayerGold { get => playerGold; set => playerGold = value; }
@@ -42,12 +45,12 @@ namespace FishingClicker
         [XmlArrayItem("PlayerMaterial")]
         public List<PlayerMaterials> PlayerMaterials { get => playerMaterials; set => playerMaterials = value; }
         [XmlElement("FishingRod")]
-        public CFishingRod FishingRod { get => fishingRod; set => fishingRod = value; }
+        public List<FishingRod> FishingRod { get => fishingRod; set => fishingRod = value; }
         #endregion
         #region Methods
         public string displayPlayerInfo()
         {
-            return $"Player name: {PlayerName}\n  Player Level: {PlayerLevel}\n Player XP: {PlayerXP}\n Player Gold: {PlayerGold} \n Player Rods: {FishingRod.DisplayInfo()}\n Player Materials: {PlayerMaterials}\n";
+            return $"Player name: {PlayerName}\n  Player Level: {PlayerLevel}\n Player XP: {PlayerXP}\n Player Gold: {PlayerGold} \n Player Rods: {FishingRod}\n Player Password: {PlayerPassword}\n";
         }
         #endregion
     }

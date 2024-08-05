@@ -39,7 +39,7 @@ namespace FishingClicker.Equipment
         Diamond
     }
     #endregion
-    public class CEquipment : IEquipment
+    public class Equipment : IEquipment
     {
         #region Variables and Constructor
         private string name;
@@ -47,14 +47,14 @@ namespace FishingClicker.Equipment
         private Level level;
         private Material material;
 
-        public CEquipment(string name, Rarity rarity, Level level=default, Material material=default)
+        public Equipment(string name, Rarity rarity=default, Level level=default, Material material=default)
         {
             this.name = name;
             this.rarity = rarity;
             this.level = level;
             this.material = material;
         }
-        public CEquipment() { }
+        public Equipment() { }
         #endregion
 
         #region Getters and Setters
