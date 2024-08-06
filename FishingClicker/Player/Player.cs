@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using FishingClicker.Equipment;
 using System.Runtime.Serialization;
+using System.Diagnostics;
+using static System.Windows.Forms.Design.AxImporter;
+using System.Collections;
+using System.Net.Http.Json;
 
-namespace FishingClicker.Player
+namespace FishingClicker.Player 
 {
-    [XmlRoot("Player")]
-    public class Player
+    [DebuggerDisplay("Player: {PlayerName} : {PlayerPassword}, Level: {PlayerLevel}-{PlayerXP}XP, {PlayerGold}g")]
+    [Serializable]
+    public class Player : IPlayerManager
     {
         #region Variables and Constructor
         private string playerName;
@@ -25,76 +31,74 @@ namespace FishingClicker.Player
         //Player constructor
         public Player(string playerName, string playerPassword, int playerLevel, int playerXP, int playerGold, List<PlayerMaterials> playerMaterials, List<FishingRod> fishingRod)
         {
-            this.playerName = playerName;
-            this.playerPassword = playerPassword;
-            this.playerLevel = playerLevel;
-            this.playerXP = playerXP;
-            this.playerGold = playerGold;
-            this.playerMaterials = playerMaterials;
-            this.fishingRod = fishingRod;
+            PlayerName = playerName;
+            PlayerPassword = playerPassword;
+            PlayerLevel = playerLevel;
+            PlayerXP = playerXP;
+            PlayerGold = playerGold;
+            PlayerMaterials = playerMaterials;
+            FishingRod = fishingRod;
         }
         public Player() { }
         #endregion
         #region Getters and Setters
-        public string PlayerName { get => playerName; set => playerName = value; }
-        public string PlayerPassword { get => playerPassword; set => playerPassword = value; }
-        public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
-        public int PlayerXP { get => playerXP; set => playerXP = value; }
-        public int PlayerGold { get => playerGold; set => playerGold = value; }
-        [XmlArray("PlayerMaterials")]
-        [XmlArrayItem("PlayerMaterial")]
-        public List<PlayerMaterials> PlayerMaterials { get => playerMaterials; set => playerMaterials = value; }
-        [XmlElement("FishingRod")]
-        public List<FishingRod> FishingRod { get => fishingRod; set => fishingRod = value; }
+        [JsonInclude]
+        public string PlayerName { get;  set; }
+        [JsonInclude]
+        public string PlayerPassword { get; set; }
+        [JsonInclude]
+        public int  PlayerLevel { get; set; }
+        [JsonInclude]
+        public int PlayerXP { get; set; }
+        [JsonInclude]
+        public int PlayerGold { get; set; }
+        [JsonInclude]
+        public List<PlayerMaterials> PlayerMaterials { get; set; }
+        [JsonInclude]
+        public List<FishingRod> FishingRod { get; set; }
         #endregion
-        #region Methods
-        public string displayPlayerInfo()
-        {
-            return $"Player name: {PlayerName}\n  Player Level: {PlayerLevel}\n Player XP: {PlayerXP}\n Player Gold: {PlayerGold} \n Player Rods: {FishingRod}\n Player Password: {PlayerPassword}\n";
-        }
+        #region methods
+        //wait
         #endregion
     }
-    #region PlayerXML
-    public class PlayerManager
+    #region PlayerManager
+
+    public class PlayerManager : IDataLoadSave
     {
-        public void SaveToFile(List<Player> players)
+        public void SaveToFile(List<Player> players, string filePath)
         {
-            var serializer = new XmlSerializer(typeof(List<Player>));
-            using (var writer = new StreamWriter("playersData.xml"))
+            var options = new JsonSerializerOptions
             {
-                serializer.Serialize(writer, players);
-            }
+                Converters = { new JsonStringEnumConverter() },
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(players, options);
+            File.WriteAllText(filePath, jsonString);
         }
 
-        public List<Player> LoadFromFile()
+        public List<Player> ReadFromFile(string filePath)
         {
-            var serializer = new XmlSerializer(typeof(List<Player>));
-            using (var reader = new StreamReader("playersData.xml"))
+            var options = new JsonSerializerOptions
             {
-                return (List<Player>)serializer.Deserialize(reader);
-            }
+                Converters = { new JsonStringEnumConverter() },
+                WriteIndented = true
+            };
+            string jsonString = File.ReadAllText(filePath);
+            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonString, options);
+            return players;
         }
     }
     #endregion
     #region PlayerMaterials
-    public class PlayerMaterials
+    [DebuggerDisplay("{Materials} : {MaterialsAmount}")]
+    public record class PlayerMaterials : Material
     {
-        private Material materials;
-        private int materialsAmount;
+        public required int MaterialsAmount { get; init; }
 
-        public PlayerMaterials(Material materials, int materialsAmount)
-        {
-            this.materials = materials;
-            this.materialsAmount = materialsAmount;
-        }
         public PlayerMaterials() { }
-        [XmlElement("MaterialsAmount")]
-        public int MaterialsAmount { get => materialsAmount; set => materialsAmount = value; }
-        [XmlElement("Materials")]
-        public Material Materials { get => materials; set => materials = value; }
-        public string MaterialsInfo()
+        public override string ToString()
         {
-            return $"{Materials} : {MaterialsAmount}";
+            return $"{MaterialVar} : {MaterialsAmount}";
         }
     }
     #endregion

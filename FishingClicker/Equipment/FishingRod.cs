@@ -7,6 +7,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace FishingClicker.Equipment
 {
@@ -26,26 +27,22 @@ namespace FishingClicker.Equipment
     [XmlInclude(typeof(IntermediateRod))]
     [XmlInclude(typeof(ExpertRod))]
     [Serializable]
-    public class FishingRod : Equipment
+    public record class FishingRod : Equipment
     {
-        #region Variables and Sonstructor
-        private decimal strength;
-        private RodAction category;
-
-        public FishingRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, itemLevel, material)
+        #region Variables
+        [JsonInclude]
+        public required decimal Strength { get; init; }
+        [JsonInclude]
+        public required RodAction Category { get; init; }
+        protected virtual decimal StrengthMultiplier { get; }
+        protected virtual decimal RarityMultiplier { get; }
+        protected virtual decimal LevelMultiplier { get; }
+        protected virtual decimal MaterialMultiplier { get; }
+        Material material1 = new Material
         {
-            this.strength = strength;
-            this.category = category;
-        }
-        public FishingRod() { }
-        #endregion
-
-        #region Getters and Setters
-        //this should be used when applying maybe potions or random strength boost
-        [XmlElement("Strength")]
-        public decimal Strength { get => strength; set => strength = value; }
-        [XmlElement("Category")]
-        public RodAction Category { get => category; set => category = value; }
+            MaterialVar = Materials.Wood
+        };
+        public FishingRod()  { }
         #endregion
 
         #region Override methods - DecimalValue(Rarity,Level,Material)
@@ -65,71 +62,49 @@ namespace FishingClicker.Equipment
 
         #region Methods
         //Method for displaying a fishing rod's information
-        public override string DisplayInfo()
+        public override string ToString()
         {
-            return base.DisplayInfo() + $" Name: {EquipmentName} \n Strength: {Strength} \n Rod Action: {Category} \n";
+            return base.ToString() + $" Name: {EquipmentName} \n Strength: {Strength} \n Rod Action: {Category} \n";
         }
 
         //Method for deciding how far a CastLine would go depending on variables below, used to determine the type of fish you'd be able to get
-        public virtual decimal CastLine(decimal strengthMultiplier, decimal rarityMultiplier, decimal levelMultiplier, decimal materialMultiplier)
-        {
-            decimal castLine = Strength * strengthMultiplier + RarityDecimal() * rarityMultiplier + LevelDecimal() * levelMultiplier + MaterialDecimal() * materialMultiplier;
-            return castLine;
-        }
+        public decimal CastLine() =>
+              Strength * StrengthMultiplier +
+              RarityDecimal() * RarityMultiplier +
+              LevelDecimal() * LevelMultiplier +
+              MaterialDecimal() * MaterialMultiplier;
         #endregion
     }
 
     #region Beginner Rod class
-    public class BeginnerRod : FishingRod
+    public record class BeginnerRod : FishingRod
     {
-        #region Constructor
-        public BeginnerRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
-        {
-        }
+        protected override decimal StrengthMultiplier => 1.2m;
+        protected override decimal RarityMultiplier => 1.25m;
+        protected override decimal LevelMultiplier => 1.1m;
+        protected override decimal MaterialMultiplier => 1.1m;
         public BeginnerRod() { }
-        #endregion
-        #region Override method
-        public override decimal CastLine(decimal strengthMultiplier = 1.2m, decimal rarityMultiplier = 1.25m, decimal levelMultiplier = 1.1m, decimal materialMultiplier = 1.1m)
-        {
-            return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
-        }
-        #endregion
     }
     #endregion
 
     #region Intermediate Rod class
-    public class IntermediateRod : FishingRod
+    public record class IntermediateRod : FishingRod
     {
-        #region Constructor
-        public IntermediateRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
-        {
-        }
+        protected override decimal StrengthMultiplier => 1.5m;
+        protected override decimal RarityMultiplier => 1.35m;
+        protected override decimal LevelMultiplier => 1.2m;
+        protected override decimal MaterialMultiplier => 1.2m;
         public IntermediateRod() { }
-        #endregion
-        #region Override method
-        public override decimal CastLine(decimal strengthMultiplier = 1.4m, decimal rarityMultiplier = 1.5m, decimal levelMultiplier = 1.2m, decimal materialMultiplier = 1.3m)
-        {
-            return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
-        }
-        #endregion
     }
     #endregion
 
     #region Expert Rod class
-    public class ExpertRod : FishingRod
+    public record class ExpertRod : FishingRod
     {
-        #region Constructor
-        public ExpertRod(string equipmentName, Rarity rarityValue, decimal strength, RodAction category, Level itemLevel, Material material) : base(equipmentName, rarityValue, strength, category, itemLevel, material)
-        {
-        }
-        public ExpertRod() { }
-        #endregion
-        #region Override method
-        public override decimal CastLine(decimal strengthMultiplier = 1.6m, decimal rarityMultiplier = 1.8m, decimal levelMultiplier = 1.4m, decimal materialMultiplier = 1.1m)
-        {
-            return base.CastLine(strengthMultiplier, rarityMultiplier, levelMultiplier, materialMultiplier);
-        }
-        #endregion
+        protected override decimal StrengthMultiplier => 1.7m;
+        protected override decimal RarityMultiplier => 1.4m;
+        protected override decimal LevelMultiplier => 1.3m;
+        protected override decimal MaterialMultiplier => 1.3m;
     }
     #endregion
 }

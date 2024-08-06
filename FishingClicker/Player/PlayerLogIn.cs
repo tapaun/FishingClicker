@@ -33,7 +33,7 @@ namespace FishingClicker
             bool realAccount = false;
             Player.Player currentPlayer = new Player.Player();
             var playerManager = new PlayerManager();
-            var loadedPlayers = playerManager.LoadFromFile();
+            var loadedPlayers = playerManager.ReadFromFile("playersData.json");
             #endregion
             #region player Log In and data checker
             foreach (var player in loadedPlayers)
@@ -57,29 +57,44 @@ namespace FishingClicker
             }
             #endregion
         }
-        public string PlayerUsernameTextbox
-        {
-            get => usernameTxtbox.Text;
-            set => usernameTxtbox.Text = value;
-        }
         private void signupButton_Click(object sender, EventArgs e)
         {
             #region variables and file loader
             bool playerExists = false;
             var fishingRod = new List<FishingRod>
             {
-                new BeginnerRod("Basic Rod", Rarity.Common, 2m, RodAction.Light, Level.LevelOne,Material.Wood),
-                new BeginnerRod("Common Rod", Rarity.Common, 3m, RodAction.Heavy, Level.LevelOne,Material.Wood)
+                new BeginnerRod{
+                    EquipmentName = "Basic Rod", 
+                    RarityValue = Rarity.Common, 
+                    Strength = 2m, 
+                    Category = RodAction.Light, 
+                    ItemLevel = Level.LevelOne,
+                    MaterialVar = Materials.Wood },
+                new BeginnerRod{
+                    EquipmentName = "Common Rod",
+                    RarityValue = Rarity.Common,
+                    Strength = 2m,
+                    Category = RodAction.Medium,
+                    ItemLevel = Level.LevelOne,
+                    MaterialVar = Materials.Wood },
             };
-            PlayerMaterials materials1 = new PlayerMaterials(Material.Iron, 20);
-            PlayerMaterials materials2 = new PlayerMaterials(Material.Stone, 20);
-            var materials = new List<PlayerMaterials>
+            PlayerMaterials materials1 = new PlayerMaterials
+            { 
+                MaterialsAmount = 10,
+                MaterialVar = Materials.Wood
+            };
+            PlayerMaterials materials2 = new PlayerMaterials
+            {
+                MaterialsAmount = 5,
+                MaterialVar = Materials.Stone
+            };
+            List<PlayerMaterials> materials = new List<PlayerMaterials>
             {
                 materials1,
                 materials2
             };
             var playerManager = new PlayerManager();
-            var loadedPlayers = playerManager.LoadFromFile();
+            var loadedPlayers = playerManager.ReadFromFile("playersData.json");
             foreach (var player in loadedPlayers)
             {
                 if (player.PlayerName == usernameTxtbox.Text)
@@ -94,7 +109,7 @@ namespace FishingClicker
             {
                 Player.Player newPlayer = new Player.Player(usernameTxtbox.Text, passwordTxtbox.Text, 1, 0, 100, materials, fishingRod);
                 loadedPlayers.Add(newPlayer);
-                playerManager.SaveToFile(loadedPlayers);
+                playerManager.SaveToFile(loadedPlayers, "playersData.json");
                 usernameTxtbox.Text = "";
                 passwordTxtbox.Text = "";
             }

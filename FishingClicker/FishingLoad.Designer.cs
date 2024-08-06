@@ -41,6 +41,7 @@
             label5 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label12 = new Label();
             tabPage2 = new TabPage();
             groupBox1 = new GroupBox();
             textBoxFRodCategory = new TextBox();
@@ -66,6 +67,7 @@
             playerLogIn = new PlayerLogIn();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBoxMaterial.SuspendLayout();
@@ -233,12 +235,23 @@
             // 
             tabPage1.BackColor = Color.RoyalBlue;
             tabPage1.BorderStyle = BorderStyle.FixedSingle;
+            tabPage1.Controls.Add(label12);
             tabPage1.ForeColor = Color.White;
             tabPage1.Location = new Point(4, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Size = new Size(524, 245);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "The Water";
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.White;
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(49, 57);
+            label12.Name = "label12";
+            label12.Size = new Size(381, 122);
+            label12.TabIndex = 0;
+            label12.Text = "label12";
             // 
             // tabPage2
             // 
@@ -477,10 +490,9 @@
             // playerLogIn
             // 
             playerLogIn.BackColor = Color.SlateBlue;
-            playerLogIn.Location = new Point(-12, -7);
+            playerLogIn.Location = new Point(-8, -10);
             playerLogIn.Name = "playerLogIn";
-            playerLogIn.PlayerUsernameTextbox = "";
-            playerLogIn.Size = new Size(731, 313);
+            playerLogIn.Size = new Size(727, 316);
             playerLogIn.TabIndex = 10;
             // 
             // FishingLoad
@@ -502,6 +514,7 @@
             Load += FishingLoad_Load;
             panel1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -549,5 +562,6 @@
         private TextBox textBoxFRodRarity;
         private Label label8;
         private Label label9;
+        private Label label12;
     }
 }

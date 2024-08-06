@@ -13,10 +13,8 @@ namespace FishingClicker.Equipment
         public void Evolve();
         public Rarity RarityValue { get; }
         public Level ItemLevel { get; }
-        public Material Material { get; }
+        public Materials MaterialVar { get;  }
         public decimal RarityDecimal();
         public decimal LevelDecimal();
-        public decimal MaterialDecimal();
-        public string DisplayInfo();
     }
 }

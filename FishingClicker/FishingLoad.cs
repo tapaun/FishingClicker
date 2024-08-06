@@ -62,6 +62,19 @@ namespace FishingClicker
             // Hide the login user control and show the main form content
             playerLogIn.Visible = false;
             equippedRod = player.FishingRod.ElementAt(0);
+            if (comboBoxFishingRods.SelectedIndex == -1)
+            {
+                foreach (PlayerMaterials playersMaterials in player.PlayerMaterials)
+                {
+                    comboBoxMaterials.Items.Add(playersMaterials.MaterialVar.ToString());
+                }
+                foreach (FishingRod fishingRods in player.FishingRod)
+                {
+                    comboBoxFishingRods.Items.Add(fishingRods.EquipmentName);
+                }
+            }
+            label12.Text = player.ToString();
+            label12.Text += player.FishingRod.ElementAt(0).ToString();
             // Display player information or proceed with main application logic
             MessageBox.Show($"Welcome, {player.PlayerName}!");
             playerLogIn.Dispose();
@@ -85,6 +98,47 @@ namespace FishingClicker
         private void FishingLoad_Load(object sender, EventArgs e)
         {
             labelsDisable(label1);
+            /*var fishingRod = new List<FishingRod>
+            {
+                new BeginnerRod{
+                    EquipmentName = "Basic Rod",
+                    RarityValue = Rarity.Common,
+                    Strength = 2m,
+                    Category = RodAction.Light,
+                    ItemLevel = Level.LevelOne,
+                    MaterialVar = Materials.Wood },
+                new BeginnerRod{
+                    EquipmentName = "Common Rod",
+                    RarityValue = Rarity.Common,
+                    Strength = 2m,
+                    Category = RodAction.Medium,
+                    ItemLevel = Level.LevelOne,
+                    MaterialVar = Materials.Wood },
+            };
+            PlayerMaterials materials1 = new PlayerMaterials
+            {
+                MaterialVar = Materials.Wood,
+                MaterialsAmount = 10,
+            };
+            PlayerMaterials materials2 = new PlayerMaterials
+            {
+                MaterialVar = Materials.Stone,
+                MaterialsAmount = 5
+            };
+            var materials = new List<PlayerMaterials>
+            {
+                materials1,
+                materials2
+            };
+            var playerManager = new PlayerManager();
+            var players = new List<Player.Player>
+            {
+                new("diogo", "diogo",1,0,100,materials,fishingRod),
+                new("matej", "matej",1,0,100,materials,fishingRod),
+                new("segi", "segi",1,0,100,materials,fishingRod),
+                new("ogi", "ogi",1,0,100,materials,fishingRod),
+            };
+            playerManager.SaveToFile(players, "playersData.json");*/
         }
         #region Navigation Buttons
         private void theWater_Click(object sender, EventArgs e)
@@ -94,17 +148,6 @@ namespace FishingClicker
         private void theInventory_Click(object sender, EventArgs e)
         {
             labelsDisable(label2); ShowTabPageByButtonText((sender as Button).Text);
-            if (comboBoxFishingRods.SelectedIndex == -1)
-            {
-                foreach (PlayerMaterials playersMaterials in player.PlayerMaterials)
-                {
-                    comboBoxMaterials.Items.Add(playersMaterials.Materials.ToString());
-                }
-                foreach (FishingRod fishingRods in player.FishingRod)
-                {
-                    comboBoxFishingRods.Items.Add(fishingRods.EquipmentName);
-                }
-            }
         }
         private void theShop_Click(object sender, EventArgs e)
         {
@@ -116,18 +159,17 @@ namespace FishingClicker
         }
         private void userInfo_Click(object sender, EventArgs e)
         {
-            labelsDisable(label5); ShowTabPageByButtonText((sender as Button).Text);
+           labelsDisable(label5); ShowTabPageByButtonText((sender as Button).Text);
         }
         #endregion
         private void comboBoxMaterials_SelectedIndexChanged(object sender, EventArgs e)
         {
             foreach (PlayerMaterials playersMaterials in player.PlayerMaterials)
             {
-                if (comboBoxMaterials.Text == playersMaterials.Materials.ToString())
+                if (comboBoxMaterials.Text == playersMaterials.MaterialVar.ToString())
                 {
-                    Equipment.Equipment material = new Equipment.Equipment("Substitute", default, default, playersMaterials.Materials);
                     textBoxMAmount.Text = playersMaterials.MaterialsAmount.ToString();
-                    textBoxMValue.Text = (material.MaterialDecimal() * 100).ToString();
+                    textBoxMValue.Text = (playersMaterials.MaterialDecimal() * 100 * playersMaterials.MaterialsAmount).ToString();
                     break;
                 }
             }
@@ -140,7 +182,7 @@ namespace FishingClicker
                 if(fishingRod.EquipmentName == comboBoxFishingRods.Text)
                 {
                     textBoxFRodRarity.Text = fishingRod.RarityValue.ToString();
-                    textBoxFRodMaterial.Text = fishingRod.Material.ToString();
+                    textBoxFRodMaterial.Text = fishingRod.MaterialVar.ToString();
                     textBoxFRodLevel.Text = fishingRod.ItemLevel.ToString();
                     textBoxFRodCategory.Text = fishingRod.Category.ToString();
                 }
