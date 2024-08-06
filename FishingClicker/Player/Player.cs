@@ -21,13 +21,6 @@ namespace FishingClicker.Player
     public class Player : IPlayerManager
     {
         #region Variables and Constructor
-        private string playerName;
-        private string playerPassword;
-        private int playerLevel;
-        private int playerXP;
-        private int playerGold;
-        private List<PlayerMaterials> playerMaterials;
-        private List<FishingRod> fishingRod;
         //Player constructor
         public Player(string playerName, string playerPassword, int playerLevel, int playerXP, int playerGold, List<PlayerMaterials> playerMaterials, List<FishingRod> fishingRod)
         {
@@ -40,8 +33,6 @@ namespace FishingClicker.Player
             FishingRod = fishingRod;
         }
         public Player() { }
-        #endregion
-        #region Getters and Setters
         [JsonInclude]
         public string PlayerName { get;  set; }
         [JsonInclude]
@@ -56,9 +47,6 @@ namespace FishingClicker.Player
         public List<PlayerMaterials> PlayerMaterials { get; set; }
         [JsonInclude]
         public List<FishingRod> FishingRod { get; set; }
-        #endregion
-        #region methods
-        //wait
         #endregion
     }
     #region PlayerManager

@@ -98,47 +98,6 @@ namespace FishingClicker
         private void FishingLoad_Load(object sender, EventArgs e)
         {
             labelsDisable(label1);
-            /*var fishingRod = new List<FishingRod>
-            {
-                new BeginnerRod{
-                    EquipmentName = "Basic Rod",
-                    RarityValue = Rarity.Common,
-                    Strength = 2m,
-                    Category = RodAction.Light,
-                    ItemLevel = Level.LevelOne,
-                    MaterialVar = Materials.Wood },
-                new BeginnerRod{
-                    EquipmentName = "Common Rod",
-                    RarityValue = Rarity.Common,
-                    Strength = 2m,
-                    Category = RodAction.Medium,
-                    ItemLevel = Level.LevelOne,
-                    MaterialVar = Materials.Wood },
-            };
-            PlayerMaterials materials1 = new PlayerMaterials
-            {
-                MaterialVar = Materials.Wood,
-                MaterialsAmount = 10,
-            };
-            PlayerMaterials materials2 = new PlayerMaterials
-            {
-                MaterialVar = Materials.Stone,
-                MaterialsAmount = 5
-            };
-            var materials = new List<PlayerMaterials>
-            {
-                materials1,
-                materials2
-            };
-            var playerManager = new PlayerManager();
-            var players = new List<Player.Player>
-            {
-                new("diogo", "diogo",1,0,100,materials,fishingRod),
-                new("matej", "matej",1,0,100,materials,fishingRod),
-                new("segi", "segi",1,0,100,materials,fishingRod),
-                new("ogi", "ogi",1,0,100,materials,fishingRod),
-            };
-            playerManager.SaveToFile(players, "playersData.json");*/
         }
         #region Navigation Buttons
         private void theWater_Click(object sender, EventArgs e)

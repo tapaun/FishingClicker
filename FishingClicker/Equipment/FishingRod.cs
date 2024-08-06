@@ -45,21 +45,6 @@ namespace FishingClicker.Equipment
         public FishingRod()  { }
         #endregion
 
-        #region Override methods - DecimalValue(Rarity,Level,Material)
-        public override decimal RarityDecimal()
-        {
-            return base.RarityDecimal();
-        }
-        public override decimal LevelDecimal()
-        {
-            return base.LevelDecimal();
-        }
-        public override decimal MaterialDecimal()
-        {
-            return base.MaterialDecimal();
-        }
-        #endregion
-
         #region Methods
         //Method for displaying a fishing rod's information
         public override string ToString()
