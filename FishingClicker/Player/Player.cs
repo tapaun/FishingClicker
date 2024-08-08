@@ -18,11 +18,11 @@ namespace FishingClicker.Player
 {
     [DebuggerDisplay("Player: {PlayerName} : {PlayerPassword}, Level: {PlayerLevel}-{PlayerXP}XP, {PlayerGold}g")]
     [Serializable]
-    public class Player : IPlayerManager
+    public class Player : IDataManager
     {
         #region Variables and Constructor
         //Player constructor
-        public Player(string playerName, string playerPassword, int playerLevel, int playerXP, int playerGold, List<PlayerMaterials> playerMaterials, List<FishingRod> fishingRod)
+        public Player(string playerName, string playerPassword, int playerLevel, int playerXP, decimal playerGold, List<PlayerMaterials> playerMaterials, List<FishingRod> fishingRod)
         {
             PlayerName = playerName;
             PlayerPassword = playerPassword;
@@ -42,23 +42,33 @@ namespace FishingClicker.Player
         [JsonInclude]
         public int PlayerXP { get; set; }
         [JsonInclude]
-        public int PlayerGold { get; set; }
+        public decimal PlayerGold { get; set; }
         [JsonInclude]
         public List<PlayerMaterials> PlayerMaterials { get; set; }
         [JsonInclude]
         public List<FishingRod> FishingRod { get; set; }
         #endregion
+        public void LevelUp(int fishWeight)
+        {
+            PlayerXP += fishWeight;
+            if(PlayerXP>=PlayerLevel*1000)
+            {
+                PlayerXP = PlayerXP-PlayerLevel * 1000;
+                PlayerLevel++;
+                MessageBox.Show("You've leveled up!");
+                PlayerGold += PlayerLevel * 120;
+            }
+        }
     }
     #region PlayerManager
-
-    public class PlayerManager : IDataLoadSave
+    public class DataManager : IDataLoadSave<Player>
     {
         public void SaveToFile(List<Player> players, string filePath)
         {
             var options = new JsonSerializerOptions
             {
                 Converters = { new JsonStringEnumConverter() },
-                WriteIndented = true
+                WriteIndented = true,
             };
             var jsonString = JsonSerializer.Serialize(players, options);
             File.WriteAllText(filePath, jsonString);

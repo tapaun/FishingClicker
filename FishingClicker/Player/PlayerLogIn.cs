@@ -32,7 +32,7 @@ namespace FishingClicker
             #region variables and file loader
             bool realAccount = false;
             Player.Player currentPlayer = new Player.Player();
-            var playerManager = new PlayerManager();
+            var playerManager = new DataManager();
             var loadedPlayers = playerManager.ReadFromFile("playersData.json");
             #endregion
             #region player Log In and data checker
@@ -93,7 +93,7 @@ namespace FishingClicker
                 materials1,
                 materials2
             };
-            var playerManager = new PlayerManager();
+            var playerManager = new DataManager();
             var loadedPlayers = playerManager.ReadFromFile("playersData.json");
             foreach (var player in loadedPlayers)
             {

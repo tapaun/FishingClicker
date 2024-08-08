@@ -23,10 +23,10 @@ namespace FishingClicker.Equipment
         ExtraHeavy
     }
     #endregion
-    [XmlInclude(typeof(BeginnerRod))]
-    [XmlInclude(typeof(IntermediateRod))]
-    [XmlInclude(typeof(ExpertRod))]
     [Serializable]
+    [JsonDerivedType(typeof(BeginnerRod), "BeginnerRod")]
+    [JsonDerivedType(typeof(IntermediateRod), "IntermediateRod")]
+    [JsonDerivedType(typeof(ExpertRod), "ExpertRod")]
     public record class FishingRod : Equipment
     {
         #region Variables
@@ -38,10 +38,6 @@ namespace FishingClicker.Equipment
         protected virtual decimal RarityMultiplier { get; }
         protected virtual decimal LevelMultiplier { get; }
         protected virtual decimal MaterialMultiplier { get; }
-        Material material1 = new Material
-        {
-            MaterialVar = Materials.Wood
-        };
         public FishingRod()  { }
         #endregion
 
@@ -90,6 +86,7 @@ namespace FishingClicker.Equipment
         protected override decimal RarityMultiplier => 1.4m;
         protected override decimal LevelMultiplier => 1.3m;
         protected override decimal MaterialMultiplier => 1.3m;
+        public ExpertRod() { }
     }
     #endregion
 }

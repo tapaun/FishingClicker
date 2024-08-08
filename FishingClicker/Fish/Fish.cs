@@ -3,8 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using FishingClicker.Player;
 
 namespace FishingClicker.Fish
 {
@@ -28,18 +32,22 @@ namespace FishingClicker.Fish
         Tropical
     }
     #endregion
-    public class Fishies
+    public class Fishies : IDataManager
     {
         #region Variables and Constructor
         private string name;
         private FishRarity fishRarity;
         private FishDepth fishDepth;
         private decimal weight;
+        protected virtual decimal WeightMultiplier { get; set; }
+        protected virtual decimal RarityMultiplier { get; set; }
+        protected virtual decimal DepthMultiplier { get; set; }
         //private Image fishImage;
         public Fishies(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight)
         {
             this.name = name;
             this.fishRarity = fishRarity;
+            this.fishDepth = fishDepth;
             this.weight = weight;
             //this.fishImage = fishImage;
         }
@@ -61,39 +69,58 @@ namespace FishingClicker.Fish
         {
             return 0m;
         }
+        public decimal SellFish() =>
+            Weight * WeightMultiplier + FishRarityDecimal() * RarityMultiplier + DepthMultiplier * DepthRarityDecimal();
         public virtual decimal SellFish(decimal weightMultiplier, decimal rarityMultiplier, decimal depthMultiplier)
         {
             return weight * weightMultiplier + FishRarityDecimal() * rarityMultiplier + depthMultiplier * DepthRarityDecimal();
         }
-        public void WriteToFile(List<Fishies> fishies)
-        {
-            var serializer = new XmlSerializer(typeof(List<Fishies>));
-            using (var writer = new StreamWriter("availableFish.xml"))
-            {
-                serializer.Serialize(writer, fishies);
-            }
-        }
         #endregion
     }
+    #region DataManager
+    public class FishiesManager : IDataLoadSave<Fishies>
+    {
+        public void SaveToFile(List<Fishies> players, string filePath)
+        {
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new JsonStringEnumConverter() },
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(players, options);
+            File.WriteAllText(filePath, jsonString);
+        }
+
+        public List<Fishies> ReadFromFile(string filePath)
+        {
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new JsonStringEnumConverter() },
+                WriteIndented = true
+            };
+            string jsonString = File.ReadAllText(filePath);
+            List<Fishies> fish = JsonSerializer.Deserialize<List<Fishies>>(jsonString, options);
+            return fish;
+        }
+    }
+    #endregion
     #region Other fishes
     public class HeavyFish : Fishies
     {
+        protected override decimal WeightMultiplier => 1.5m;
+        protected override decimal RarityMultiplier => 1.5m;
+        protected override decimal DepthMultiplier => 1.5m;
         public HeavyFish(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight) : base(name, fishRarity, fishDepth, weight)
         {
-        }
-        public override decimal SellFish(decimal weightMultiplier=3m, decimal rarityMultiplier=1.5m, decimal depthMultiplier = 2m)
-        {
-            return base.SellFish(weightMultiplier, rarityMultiplier, depthMultiplier);
         }
     }
     public class ExoticFish : Fishies
     {
+        protected override decimal WeightMultiplier => 2m;
+        protected override decimal RarityMultiplier => 1.75m;
+        protected override decimal DepthMultiplier => 2m;
         public ExoticFish(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight) : base(name, fishRarity, fishDepth, weight)
         {
-        }
-        public override decimal SellFish(decimal weightMultiplier = 1.6m, decimal rarityMultiplier = 4.5m, decimal depthMultiplier = 2.5m)
-        {
-            return base.SellFish(weightMultiplier, rarityMultiplier, depthMultiplier);
         }
     }
     #endregion

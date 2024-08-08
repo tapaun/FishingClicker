@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FishingClicker.Player
 {
-    internal interface IPlayerManager
+    internal interface IDataManager
     {
-        public class PlayerManager();
+        public class DataManager();
     }
 }

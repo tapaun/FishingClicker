@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FishingLoad));
             panel1 = new Panel();
             userInfo = new Button();
             theShrine = new Button();
@@ -41,8 +42,12 @@
             label5 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            label12 = new Label();
+            labelInfo = new Label();
+            progressBarInfo = new ProgressBar();
+            labelNotification = new Label();
+            pictureBox1 = new PictureBox();
             tabPage2 = new TabPage();
+            buttonEquipRod = new Button();
             groupBox1 = new GroupBox();
             textBoxFRodCategory = new TextBox();
             label11 = new Label();
@@ -68,6 +73,7 @@
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBoxMaterial.SuspendLayout();
@@ -235,27 +241,60 @@
             // 
             tabPage1.BackColor = Color.RoyalBlue;
             tabPage1.BorderStyle = BorderStyle.FixedSingle;
-            tabPage1.Controls.Add(label12);
+            tabPage1.Controls.Add(labelInfo);
+            tabPage1.Controls.Add(progressBarInfo);
+            tabPage1.Controls.Add(labelNotification);
+            tabPage1.Controls.Add(pictureBox1);
             tabPage1.ForeColor = Color.White;
             tabPage1.Location = new Point(4, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Size = new Size(524, 245);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "The Water";
+            tabPage1.MouseClick += tabPage1_MouseClick;
             // 
-            // label12
+            // labelInfo
             // 
-            label12.BackColor = Color.White;
-            label12.ForeColor = Color.Black;
-            label12.Location = new Point(49, 57);
-            label12.Name = "label12";
-            label12.Size = new Size(381, 122);
-            label12.TabIndex = 0;
-            label12.Text = "label12";
+            labelInfo.BackColor = Color.White;
+            labelInfo.Font = new Font("Segoe UI", 7F);
+            labelInfo.ForeColor = Color.Black;
+            labelInfo.Location = new Point(191, 225);
+            labelInfo.Name = "labelInfo";
+            labelInfo.Size = new Size(336, 19);
+            labelInfo.TabIndex = 12;
+            // 
+            // progressBarInfo
+            // 
+            progressBarInfo.BackColor = Color.Black;
+            progressBarInfo.ForeColor = Color.Violet;
+            progressBarInfo.Location = new Point(-1, 225);
+            progressBarInfo.Name = "progressBarInfo";
+            progressBarInfo.Size = new Size(192, 19);
+            progressBarInfo.Style = ProgressBarStyle.Continuous;
+            progressBarInfo.TabIndex = 11;
+            // 
+            // labelNotification
+            // 
+            labelNotification.Location = new Point(-1, -1);
+            labelNotification.Name = "labelNotification";
+            labelNotification.Size = new Size(524, 17);
+            labelNotification.TabIndex = 11;
+            labelNotification.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-5, -5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(532, 234);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // tabPage2
             // 
             tabPage2.BackColor = Color.RoyalBlue;
+            tabPage2.Controls.Add(buttonEquipRod);
             tabPage2.Controls.Add(groupBox1);
             tabPage2.Controls.Add(groupBoxMaterial);
             tabPage2.Controls.Add(comboBoxFishingRods);
@@ -267,6 +306,19 @@
             tabPage2.Size = new Size(524, 245);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Inventory";
+            // 
+            // buttonEquipRod
+            // 
+            buttonEquipRod.BackColor = Color.Violet;
+            buttonEquipRod.FlatStyle = FlatStyle.Flat;
+            buttonEquipRod.ForeColor = Color.White;
+            buttonEquipRod.Location = new Point(459, 60);
+            buttonEquipRod.Name = "buttonEquipRod";
+            buttonEquipRod.Size = new Size(62, 25);
+            buttonEquipRod.TabIndex = 8;
+            buttonEquipRod.Text = "Equip";
+            buttonEquipRod.UseVisualStyleBackColor = false;
+            buttonEquipRod.Click += buttonEquipRod_Click;
             // 
             // groupBox1
             // 
@@ -490,9 +542,9 @@
             // playerLogIn
             // 
             playerLogIn.BackColor = Color.SlateBlue;
-            playerLogIn.Location = new Point(-8, -10);
+            playerLogIn.Location = new Point(-6, -11);
             playerLogIn.Name = "playerLogIn";
-            playerLogIn.Size = new Size(727, 316);
+            playerLogIn.Size = new Size(725, 317);
             playerLogIn.TabIndex = 10;
             // 
             // FishingLoad
@@ -511,10 +563,12 @@
             Controls.Add(label5);
             Name = "FishingLoad";
             Text = "FishingLoad";
+            FormClosed += FishingLoad_FormClosed;
             Load += FishingLoad_Load;
             panel1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -562,6 +616,10 @@
         private TextBox textBoxFRodRarity;
         private Label label8;
         private Label label9;
-        private Label label12;
+        private PictureBox pictureBox1;
+        private Label labelNotification;
+        private Label labelInfo;
+        private ProgressBar progressBarInfo;
+        private Button buttonEquipRod;
     }
 }
