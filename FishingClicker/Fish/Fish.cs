@@ -45,13 +45,14 @@ namespace FishingClicker.Fish
         //private Image fishImage;
         public Fishies(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight)
         {
-            this.name = name;
+            this.name       = name;
             this.fishRarity = fishRarity;
-            this.fishDepth = fishDepth;
-            this.weight = weight;
+            this.fishDepth  = fishDepth;
+            this.weight     = weight;
             //this.fishImage = fishImage;
         }
         public Fishies() { }
+
         #endregion
         #region Getters and Setters
         public string Name { get => name; set => name = value; }
@@ -71,10 +72,6 @@ namespace FishingClicker.Fish
         }
         public decimal SellFish() =>
             Weight * WeightMultiplier + FishRarityDecimal() * RarityMultiplier + DepthMultiplier * DepthRarityDecimal();
-        public virtual decimal SellFish(decimal weightMultiplier, decimal rarityMultiplier, decimal depthMultiplier)
-        {
-            return weight * weightMultiplier + FishRarityDecimal() * rarityMultiplier + depthMultiplier * DepthRarityDecimal();
-        }
         #endregion
     }
     #region DataManager
@@ -109,7 +106,7 @@ namespace FishingClicker.Fish
     {
         protected override decimal WeightMultiplier => 1.5m;
         protected override decimal RarityMultiplier => 1.5m;
-        protected override decimal DepthMultiplier => 1.5m;
+        protected override decimal DepthMultiplier  => 1.5m;
         public HeavyFish(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight) : base(name, fishRarity, fishDepth, weight)
         {
         }
@@ -118,7 +115,7 @@ namespace FishingClicker.Fish
     {
         protected override decimal WeightMultiplier => 2m;
         protected override decimal RarityMultiplier => 1.75m;
-        protected override decimal DepthMultiplier => 2m;
+        protected override decimal DepthMultiplier  => 2m;
         public ExoticFish(string name, FishRarity fishRarity, FishDepth fishDepth, decimal weight) : base(name, fishRarity, fishDepth, weight)
         {
         }

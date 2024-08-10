@@ -69,24 +69,24 @@ namespace FishingClicker
                     Strength = 2m, 
                     Category = RodAction.Light, 
                     ItemLevel = Level.LevelOne,
-                    MaterialVar = Materials.Wood },
+                    MaterialVar = Mats.Materials.Wood },
                 new BeginnerRod{
                     EquipmentName = "Common Rod",
                     RarityValue = Rarity.Common,
                     Strength = 2m,
                     Category = RodAction.Medium,
                     ItemLevel = Level.LevelOne,
-                    MaterialVar = Materials.Wood },
+                    MaterialVar = Mats.Materials.Wood },
             };
             PlayerMaterials materials1 = new PlayerMaterials
             { 
                 MaterialsAmount = 10,
-                MaterialVar = Materials.Wood
+                MaterialVar = Mats.Materials.Wood
             };
             PlayerMaterials materials2 = new PlayerMaterials
             {
                 MaterialsAmount = 5,
-                MaterialVar = Materials.Stone
+                MaterialVar = Mats.Materials.Stone
             };
             List<PlayerMaterials> materials = new List<PlayerMaterials>
             {

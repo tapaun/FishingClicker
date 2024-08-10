@@ -10,6 +10,7 @@ using System.Xml;
 using System.IO;
 using System.Diagnostics;
 using System.Text.Json.Serialization;
+using FishingClicker.Equipment;
 
 namespace FishingClicker.Equipment
 {
@@ -34,7 +35,7 @@ namespace FishingClicker.Equipment
     }
     #endregion
     [DebuggerDisplay("Name: {EquipmentName} Material: {MaterialVar} Level: {ItemLevel} Rarity: {RarityValue}")]
-    public record class Equipment : Material, IEquipment
+    public record class Equipment : Mats.Material, IEquipment
     {
         #region Variables and Constructor
         public Equipment() { }
@@ -62,7 +63,7 @@ namespace FishingClicker.Equipment
             {
                 throw new InvalidOperationException("Cannot evolve beyond Legendary.");
             }
-            this.RarityValue++;
+            RarityValue++;
         }
         public void Upgrade()
         {
@@ -76,10 +77,10 @@ namespace FishingClicker.Equipment
         {
             return RarityValue switch
             {
-                Rarity.Common => 100,
-                Rarity.Uncommon => 150,
-                Rarity.Rare => 200,
-                Rarity.Epic => 250,
+                Rarity.Common    => 100,
+                Rarity.Uncommon  => 150,
+                Rarity.Rare      => 200,
+                Rarity.Epic      => 250,
                 Rarity.Legendary => 300,
                 _ => 100,
             };
@@ -88,10 +89,10 @@ namespace FishingClicker.Equipment
         {
             return RarityValue switch
             {
-                Rarity.Common => 1,
-                Rarity.Uncommon => 1.5m,
-                Rarity.Rare => 2,
-                Rarity.Epic => 2.5m,
+                Rarity.Common    => 1,
+                Rarity.Uncommon  => 1.5m,
+                Rarity.Rare      => 2,
+                Rarity.Epic      => 2.5m,
                 Rarity.Legendary => 3,
                 _ => 1,
             };
@@ -100,11 +101,11 @@ namespace FishingClicker.Equipment
         {
             return ItemLevel switch
             {
-                Level.LevelOne => 1,
-                Level.LevelTwo => 1.5m,
+                Level.LevelOne   => 1,
+                Level.LevelTwo   => 1.5m,
                 Level.LevelThree => 2,
-                Level.LevelFour => 2.5m,
-                Level.LevelFive => 3,
+                Level.LevelFour  => 2.5m,
+                Level.LevelFive  => 3,
                 _ => 1,
             };
         }

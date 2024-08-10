@@ -38,6 +38,7 @@ namespace FishingClicker.Equipment
         protected virtual decimal RarityMultiplier { get; }
         protected virtual decimal LevelMultiplier { get; }
         protected virtual decimal MaterialMultiplier { get; }
+
         public FishingRod()  { }
         #endregion
 
@@ -50,9 +51,9 @@ namespace FishingClicker.Equipment
 
         //Method for deciding how far a CastLine would go depending on variables below, used to determine the type of fish you'd be able to get
         public decimal CastLine() =>
-              Strength * StrengthMultiplier +
-              RarityDecimal() * RarityMultiplier +
-              LevelDecimal() * LevelMultiplier +
+              Strength          * StrengthMultiplier +
+              RarityDecimal()   * RarityMultiplier +
+              LevelDecimal()    * LevelMultiplier +
               MaterialDecimal() * MaterialMultiplier;
         #endregion
     }
@@ -61,8 +62,8 @@ namespace FishingClicker.Equipment
     public record class BeginnerRod : FishingRod
     {
         protected override decimal StrengthMultiplier => 1.2m;
-        protected override decimal RarityMultiplier => 1.25m;
-        protected override decimal LevelMultiplier => 1.1m;
+        protected override decimal RarityMultiplier   => 1.25m;
+        protected override decimal LevelMultiplier    => 1.1m;
         protected override decimal MaterialMultiplier => 1.1m;
         public BeginnerRod() { }
     }
@@ -72,8 +73,8 @@ namespace FishingClicker.Equipment
     public record class IntermediateRod : FishingRod
     {
         protected override decimal StrengthMultiplier => 1.5m;
-        protected override decimal RarityMultiplier => 1.35m;
-        protected override decimal LevelMultiplier => 1.2m;
+        protected override decimal RarityMultiplier   => 1.35m;
+        protected override decimal LevelMultiplier    => 1.2m;
         protected override decimal MaterialMultiplier => 1.2m;
         public IntermediateRod() { }
     }
@@ -83,8 +84,8 @@ namespace FishingClicker.Equipment
     public record class ExpertRod : FishingRod
     {
         protected override decimal StrengthMultiplier => 1.7m;
-        protected override decimal RarityMultiplier => 1.4m;
-        protected override decimal LevelMultiplier => 1.3m;
+        protected override decimal RarityMultiplier   => 1.4m;
+        protected override decimal LevelMultiplier    => 1.3m;
         protected override decimal MaterialMultiplier => 1.3m;
         public ExpertRod() { }
     }
