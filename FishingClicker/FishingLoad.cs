@@ -1,29 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FishingClicker.Equipment;
+﻿using FishingClicker.Equipment;
 using FishingClicker.Fish;
-using System.IO;
-using System.Runtime.Serialization;
-using System.Xml.Serialization;
-using System.Numerics;
-using FishingClicker.Player;
+using FishingClicker.User;
 using static FishingClicker.PlayerLogIn;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using FishingClicker.Equipment;
 
 namespace FishingClicker
 {
     public partial class FishingLoad : Form
     {
-        private Player.Player player;
+        private Player player;
         private Dictionary<string, TabPage> tabPageDictionary = [];
         public FishingLoad()
         {
@@ -31,11 +15,28 @@ namespace FishingClicker
             #region event subs
             playerLogIn.LoginSuccessful += PlayerLogIn_LoginSuccessful;
             pictureBox1.MouseClick += tabPage1_MouseClick;
-            textBoxWood.TextChanged += materialButtons_TextChanged;
-            textBoxStone.TextChanged += materialButtons_TextChanged;
-            textBoxIron.TextChanged += materialButtons_TextChanged;
-            textBoxGold.TextChanged += materialButtons_TextChanged;
+            #region material buttons
+            textBoxWood.TextChanged    += materialButtons_TextChanged;
+            textBoxStone.TextChanged   += materialButtons_TextChanged;
+            textBoxIron.TextChanged    += materialButtons_TextChanged;
+            textBoxGold.TextChanged    += materialButtons_TextChanged;
             textBoxDiamond.TextChanged += materialButtons_TextChanged;
+            #endregion
+            #region case buttons
+            buttonULCase.Tag = new UltraLightCase();
+            buttonLCase.Tag  = new LightCase();
+            buttonMCase.Tag  = new MediumCase();
+            buttonMHCase.Tag = new MediumHeavyCase();
+            buttonHCase.Tag  = new HeavyCase();
+            buttonEHCase.Tag = new ExtraHeavyCase();
+
+            buttonULCase.MouseClick += caseButton_Click;
+            buttonLCase.MouseClick  += caseButton_Click;
+            buttonMCase.MouseClick  += caseButton_Click;
+            buttonMHCase.MouseClick += caseButton_Click;
+            buttonHCase.MouseClick  += caseButton_Click;
+            buttonEHCase.MouseClick += caseButton_Click;
+            #endregion
             #endregion
             #region TabControl set up
             foreach (TabPage tabPage in tabControl1.TabPages)
@@ -237,7 +238,17 @@ namespace FishingClicker
         //Saving player data
         private void FishingLoad_FormClosed(object sender, FormClosedEventArgs e)
         {
-            player.FormClosing();
+            if(player!=null) player.FormClosing(); 
+        }
+        private void caseButton_Click(object sender, EventArgs e)
+        {
+            Button? clickedButton = sender as Button;
+            var caseClass = (Case)Activator.CreateInstance((sender as Button).Tag.GetType());
+            if(clickedButton!=null)
+            {
+                caseClass.FishingRodOpened(player);
+                textBoxAvailableGold.Text = player.PlayerGold.ToString();
+            }
         }
     }
 }

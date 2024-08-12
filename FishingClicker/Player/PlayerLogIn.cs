@@ -1,5 +1,5 @@
 ﻿using FishingClicker.Equipment;
-using FishingClicker.Player;
+using FishingClicker.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,7 +31,7 @@ namespace FishingClicker
         {
             #region variables and file loader
             bool realAccount = false;
-            Player.Player currentPlayer = new Player.Player();
+            User.Player currentPlayer = new User.Player();
             var playerManager = new DataManager();
             var loadedPlayers = playerManager.ReadFromFile("playersData.json");
             #endregion
@@ -107,7 +107,7 @@ namespace FishingClicker
             #region data checker and player creator
             if (!playerExists)
             {
-                Player.Player newPlayer = new Player.Player(usernameTxtbox.Text, passwordTxtbox.Text, 1, 0, 100, materials, fishingRod);
+                User.Player newPlayer = new User.Player(usernameTxtbox.Text, passwordTxtbox.Text, 1, 0, 100, materials, fishingRod);
                 loadedPlayers.Add(newPlayer);
                 playerManager.SaveToFile(loadedPlayers, "playersData.json");
                 usernameTxtbox.Text = "";
@@ -122,9 +122,9 @@ namespace FishingClicker
         #endregion
         public class PlayerEventArgs : EventArgs
         {
-            public Player.Player Player { get; }
+            public User.Player Player { get; }
 
-            public PlayerEventArgs(Player.Player player)
+            public PlayerEventArgs(User.Player player)
             {
                 Player = player;
             }

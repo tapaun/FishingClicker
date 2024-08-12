@@ -8,7 +8,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using FishingClicker.Player;
+using FishingClicker.User;
 
 namespace FishingClicker.Fish
 {

@@ -5,7 +5,7 @@ using System.Diagnostics;
 using FishingClicker.Fish;
 using FishingClicker.Mats;
 
-namespace FishingClicker.Player
+namespace FishingClicker.User
 {
     [DebuggerDisplay("Player: {PlayerName} : {PlayerPassword}, Level: {PlayerLevel}-{PlayerXP}XP, {PlayerGold}g")]
     [Serializable]
@@ -54,7 +54,7 @@ namespace FishingClicker.Player
         }
         public FishingRod EquipRod(string fishingRodName)
         {
-            return FishingRod.First(fishingRod => fishingRod.EquipmentName == fishingRodName);   
+            return FishingRod.First(fishingRod => fishingRod.ToString() == fishingRodName);   
         }
         public string[] RodData(string fishingRodName)
         {
@@ -119,16 +119,14 @@ namespace FishingClicker.Player
         {
             var dataManager = new DataManager();
             var players = dataManager.ReadFromFile("playersData.json");
-            if (this != null)
+            foreach (var playerFile in players)
             {
-                foreach (var playerFile in players)
+                //playerFile.FishingRod.ForEach(c => c.RarityValue = Rarity.Common);
+                if (playerFile.PlayerName == PlayerName)
                 {
-                    if (playerFile.PlayerName == PlayerName)
-                    {
-                        players.Remove(playerFile);
-                        players.Add(this);
-                        break;
-                    }
+                    players.Remove(playerFile);
+                    players.Add(this);
+                    break;
                 }
             }
             dataManager.SaveToFile(players, "playersData.json");
@@ -163,7 +161,7 @@ namespace FishingClicker.Player
     #endregion
     #region PlayerMaterials
     [DebuggerDisplay("{Materials} : {MaterialsAmount}")]
-    public record class PlayerMaterials : Material
+    public class PlayerMaterials : Mats.Material
     {
         public required int MaterialsAmount { get; set; }
         public PlayerMaterials() { }

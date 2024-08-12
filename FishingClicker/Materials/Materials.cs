@@ -17,7 +17,7 @@ namespace FishingClicker.Mats
         Gold,
         Diamond
     }
-    public record class Material()
+    public class Material()
     {
         [JsonInclude]
         public required Materials MaterialVar { get; set; }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FishingClicker.Player
+namespace FishingClicker.User
 {
     internal interface IDataLoadSave<T>
     {

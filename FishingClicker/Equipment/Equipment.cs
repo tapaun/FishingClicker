@@ -35,7 +35,7 @@ namespace FishingClicker.Equipment
     }
     #endregion
     [DebuggerDisplay("Name: {EquipmentName} Material: {MaterialVar} Level: {ItemLevel} Rarity: {RarityValue}")]
-    public record class Equipment : Mats.Material, IEquipment
+    public class Equipment : Mats.Material, IEquipment
     {
         #region Variables and Constructor
         public Equipment() { }
@@ -47,7 +47,7 @@ namespace FishingClicker.Equipment
         [JsonInclude]
         public required Level ItemLevel { get; set; }
         [JsonInclude]
-        public required string EquipmentName { get; init; }
+        public required string EquipmentName { get; set; }
         #endregion
 
         #region Methods

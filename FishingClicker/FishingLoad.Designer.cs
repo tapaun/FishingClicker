@@ -44,6 +44,18 @@
             tabPage5 = new TabPage();
             tabPage4 = new TabPage();
             tabPage3 = new TabPage();
+            buttonEHCase = new Button();
+            buttonHCase = new Button();
+            buttonMHCase = new Button();
+            buttonMCase = new Button();
+            buttonLCase = new Button();
+            buttonULCase = new Button();
+            label28 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
+            label27 = new Label();
             buttonPurchase = new Button();
             textBoxAvailableGold = new TextBox();
             label22 = new Label();
@@ -94,6 +106,12 @@
             labelNotification = new Label();
             pictureBox1 = new PictureBox();
             tabControl1 = new TabControl();
+            label29 = new Label();
+            label30 = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
+            label34 = new Label();
             panel1.SuspendLayout();
             tabPage3.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -250,9 +268,9 @@
             // playerLogIn
             // 
             playerLogIn.BackColor = Color.SlateBlue;
-            playerLogIn.Location = new Point(-1, -10);
+            playerLogIn.Location = new Point(0, -11);
             playerLogIn.Name = "playerLogIn";
-            playerLogIn.Size = new Size(720, 316);
+            playerLogIn.Size = new Size(719, 317);
             playerLogIn.TabIndex = 10;
             // 
             // tabPage5
@@ -276,6 +294,24 @@
             // tabPage3
             // 
             tabPage3.BackColor = Color.Pink;
+            tabPage3.Controls.Add(label34);
+            tabPage3.Controls.Add(label33);
+            tabPage3.Controls.Add(label32);
+            tabPage3.Controls.Add(label31);
+            tabPage3.Controls.Add(label30);
+            tabPage3.Controls.Add(label29);
+            tabPage3.Controls.Add(buttonEHCase);
+            tabPage3.Controls.Add(buttonHCase);
+            tabPage3.Controls.Add(buttonMHCase);
+            tabPage3.Controls.Add(buttonMCase);
+            tabPage3.Controls.Add(buttonLCase);
+            tabPage3.Controls.Add(buttonULCase);
+            tabPage3.Controls.Add(label28);
+            tabPage3.Controls.Add(label23);
+            tabPage3.Controls.Add(label24);
+            tabPage3.Controls.Add(label25);
+            tabPage3.Controls.Add(label26);
+            tabPage3.Controls.Add(label27);
             tabPage3.Controls.Add(buttonPurchase);
             tabPage3.Controls.Add(textBoxAvailableGold);
             tabPage3.Controls.Add(label22);
@@ -306,14 +342,153 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Shop";
             // 
+            // buttonEHCase
+            // 
+            buttonEHCase.BackColor = Color.HotPink;
+            buttonEHCase.FlatStyle = FlatStyle.Flat;
+            buttonEHCase.ForeColor = Color.White;
+            buttonEHCase.Location = new Point(417, 185);
+            buttonEHCase.Name = "buttonEHCase";
+            buttonEHCase.Size = new Size(75, 24);
+            buttonEHCase.TabIndex = 36;
+            buttonEHCase.Text = "Open Case";
+            buttonEHCase.UseVisualStyleBackColor = false;
+            // 
+            // buttonHCase
+            // 
+            buttonHCase.BackColor = Color.HotPink;
+            buttonHCase.FlatStyle = FlatStyle.Flat;
+            buttonHCase.ForeColor = Color.White;
+            buttonHCase.Location = new Point(416, 157);
+            buttonHCase.Name = "buttonHCase";
+            buttonHCase.Size = new Size(75, 24);
+            buttonHCase.TabIndex = 35;
+            buttonHCase.Text = "Open Case";
+            buttonHCase.UseVisualStyleBackColor = false;
+            // 
+            // buttonMHCase
+            // 
+            buttonMHCase.BackColor = Color.HotPink;
+            buttonMHCase.FlatStyle = FlatStyle.Flat;
+            buttonMHCase.ForeColor = Color.White;
+            buttonMHCase.Location = new Point(416, 130);
+            buttonMHCase.Name = "buttonMHCase";
+            buttonMHCase.Size = new Size(75, 24);
+            buttonMHCase.TabIndex = 34;
+            buttonMHCase.Text = "Open Case";
+            buttonMHCase.UseVisualStyleBackColor = false;
+            // 
+            // buttonMCase
+            // 
+            buttonMCase.BackColor = Color.HotPink;
+            buttonMCase.FlatStyle = FlatStyle.Flat;
+            buttonMCase.ForeColor = Color.White;
+            buttonMCase.Location = new Point(416, 102);
+            buttonMCase.Name = "buttonMCase";
+            buttonMCase.Size = new Size(75, 24);
+            buttonMCase.TabIndex = 33;
+            buttonMCase.Text = "Open Case";
+            buttonMCase.UseVisualStyleBackColor = false;
+            // 
+            // buttonLCase
+            // 
+            buttonLCase.BackColor = Color.HotPink;
+            buttonLCase.FlatStyle = FlatStyle.Flat;
+            buttonLCase.ForeColor = Color.White;
+            buttonLCase.Location = new Point(416, 75);
+            buttonLCase.Name = "buttonLCase";
+            buttonLCase.Size = new Size(75, 24);
+            buttonLCase.TabIndex = 32;
+            buttonLCase.Text = "Open Case";
+            buttonLCase.UseVisualStyleBackColor = false;
+            // 
+            // buttonULCase
+            // 
+            buttonULCase.BackColor = Color.HotPink;
+            buttonULCase.FlatStyle = FlatStyle.Flat;
+            buttonULCase.ForeColor = Color.White;
+            buttonULCase.Location = new Point(416, 49);
+            buttonULCase.Name = "buttonULCase";
+            buttonULCase.Size = new Size(75, 24);
+            buttonULCase.TabIndex = 31;
+            buttonULCase.Text = "Open Case";
+            buttonULCase.UseVisualStyleBackColor = false;
+            // 
+            // label28
+            // 
+            label28.BackColor = Color.SteelBlue;
+            label28.Font = new Font("Segoe UI", 10F);
+            label28.Location = new Point(274, 186);
+            label28.Name = "label28";
+            label28.Size = new Size(137, 20);
+            label28.TabIndex = 30;
+            label28.Text = "Extra Heavy case";
+            label28.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            label23.BackColor = Color.CornflowerBlue;
+            label23.Font = new Font("Segoe UI", 10F);
+            label23.Location = new Point(273, 158);
+            label23.Name = "label23";
+            label23.Size = new Size(137, 20);
+            label23.TabIndex = 28;
+            label23.Text = "Heavy case";
+            label23.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.MediumAquamarine;
+            label24.Font = new Font("Segoe UI", 10F);
+            label24.Location = new Point(273, 131);
+            label24.Name = "label24";
+            label24.Size = new Size(137, 20);
+            label24.TabIndex = 27;
+            label24.Text = "Medium Heavy Case";
+            label24.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            label25.BackColor = Color.LightSeaGreen;
+            label25.Font = new Font("Segoe UI", 10F);
+            label25.Location = new Point(273, 103);
+            label25.Name = "label25";
+            label25.Size = new Size(137, 20);
+            label25.TabIndex = 26;
+            label25.Text = "Medium Case";
+            label25.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            label26.BackColor = Color.Aquamarine;
+            label26.Font = new Font("Segoe UI", 10F);
+            label26.Location = new Point(273, 76);
+            label26.Name = "label26";
+            label26.Size = new Size(137, 20);
+            label26.TabIndex = 25;
+            label26.Text = "Light Case";
+            label26.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            label27.BackColor = Color.FromArgb(192, 255, 255);
+            label27.Font = new Font("Segoe UI", 10F);
+            label27.ForeColor = Color.Black;
+            label27.Location = new Point(273, 50);
+            label27.Name = "label27";
+            label27.Size = new Size(137, 20);
+            label27.TabIndex = 24;
+            label27.Text = "Ultra Light Case";
+            label27.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // buttonPurchase
             // 
             buttonPurchase.BackColor = Color.Orchid;
             buttonPurchase.FlatStyle = FlatStyle.Flat;
             buttonPurchase.ForeColor = Color.White;
-            buttonPurchase.Location = new Point(180, 199);
+            buttonPurchase.Location = new Point(182, 197);
             buttonPurchase.Name = "buttonPurchase";
-            buttonPurchase.Size = new Size(75, 27);
+            buttonPurchase.Size = new Size(72, 27);
             buttonPurchase.TabIndex = 23;
             buttonPurchase.Text = "Purchase";
             buttonPurchase.UseVisualStyleBackColor = false;
@@ -321,7 +496,7 @@
             // 
             // textBoxAvailableGold
             // 
-            textBoxAvailableGold.Location = new Point(108, 214);
+            textBoxAvailableGold.Location = new Point(227, 24);
             textBoxAvailableGold.Name = "textBoxAvailableGold";
             textBoxAvailableGold.ReadOnly = true;
             textBoxAvailableGold.Size = new Size(71, 23);
@@ -333,7 +508,7 @@
             label22.FlatStyle = FlatStyle.Flat;
             label22.Font = new Font("Segoe UI", 9F);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(3, 214);
+            label22.Location = new Point(215, 5);
             label22.Name = "label22";
             label22.Size = new Size(93, 23);
             label22.TabIndex = 21;
@@ -342,7 +517,7 @@
             // 
             // textBoxTotalPrice
             // 
-            textBoxTotalPrice.Location = new Point(108, 188);
+            textBoxTotalPrice.Location = new Point(108, 199);
             textBoxTotalPrice.Name = "textBoxTotalPrice";
             textBoxTotalPrice.ReadOnly = true;
             textBoxTotalPrice.Size = new Size(71, 23);
@@ -353,7 +528,7 @@
             label21.BackColor = Color.DarkOrchid;
             label21.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.White;
-            label21.Location = new Point(3, 190);
+            label21.Location = new Point(3, 200);
             label21.Name = "label21";
             label21.Size = new Size(93, 20);
             label21.TabIndex = 19;
@@ -512,9 +687,9 @@
             label14.BackColor = Color.Violet;
             label14.FlatStyle = FlatStyle.Flat;
             label14.ForeColor = Color.White;
-            label14.Location = new Point(257, 0);
+            label14.Location = new Point(257, 46);
             label14.Name = "label14";
-            label14.Size = new Size(10, 245);
+            label14.Size = new Size(10, 199);
             label14.TabIndex = 2;
             label14.Text = "oooooooooooooooooo";
             label14.TextAlign = ContentAlignment.MiddleCenter;
@@ -525,9 +700,9 @@
             label13.FlatStyle = FlatStyle.Flat;
             label13.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(270, 5);
+            label13.Location = new Point(300, 5);
             label13.Name = "label13";
-            label13.Size = new Size(251, 23);
+            label13.Size = new Size(221, 23);
             label13.TabIndex = 1;
             label13.Text = "Fishing Rods";
             label13.TextAlign = ContentAlignment.MiddleCenter;
@@ -540,7 +715,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(3, 5);
             label12.Name = "label12";
-            label12.Size = new Size(251, 23);
+            label12.Size = new Size(221, 23);
             label12.TabIndex = 0;
             label12.Text = "Materials";
             label12.TextAlign = ContentAlignment.MiddleCenter;
@@ -599,6 +774,7 @@
             textBoxFRodCategory.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxFRodCategory.Location = new Point(85, 100);
             textBoxFRodCategory.Name = "textBoxFRodCategory";
+            textBoxFRodCategory.ReadOnly = true;
             textBoxFRodCategory.Size = new Size(90, 27);
             textBoxFRodCategory.TabIndex = 7;
             // 
@@ -618,6 +794,7 @@
             textBoxFRodLevel.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxFRodLevel.Location = new Point(85, 73);
             textBoxFRodLevel.Name = "textBoxFRodLevel";
+            textBoxFRodLevel.ReadOnly = true;
             textBoxFRodLevel.Size = new Size(90, 27);
             textBoxFRodLevel.TabIndex = 5;
             // 
@@ -637,6 +814,7 @@
             textBoxFRodMaterial.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxFRodMaterial.Location = new Point(85, 46);
             textBoxFRodMaterial.Name = "textBoxFRodMaterial";
+            textBoxFRodMaterial.ReadOnly = true;
             textBoxFRodMaterial.Size = new Size(90, 27);
             textBoxFRodMaterial.TabIndex = 3;
             // 
@@ -645,6 +823,7 @@
             textBoxFRodRarity.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxFRodRarity.Location = new Point(85, 19);
             textBoxFRodRarity.Name = "textBoxFRodRarity";
+            textBoxFRodRarity.ReadOnly = true;
             textBoxFRodRarity.Size = new Size(90, 27);
             textBoxFRodRarity.TabIndex = 2;
             // 
@@ -691,6 +870,7 @@
             textBoxMValue.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxMValue.Location = new Point(85, 69);
             textBoxMValue.Name = "textBoxMValue";
+            textBoxMValue.ReadOnly = true;
             textBoxMValue.Size = new Size(90, 27);
             textBoxMValue.TabIndex = 3;
             // 
@@ -699,6 +879,7 @@
             textBoxMAmount.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             textBoxMAmount.Location = new Point(85, 34);
             textBoxMAmount.Name = "textBoxMAmount";
+            textBoxMAmount.ReadOnly = true;
             textBoxMAmount.Size = new Size(90, 27);
             textBoxMAmount.TabIndex = 2;
             // 
@@ -730,6 +911,7 @@
             comboBoxFishingRods.Location = new Point(259, 61);
             comboBoxFishingRods.Name = "comboBoxFishingRods";
             comboBoxFishingRods.Size = new Size(197, 23);
+            comboBoxFishingRods.Sorted = true;
             comboBoxFishingRods.TabIndex = 5;
             comboBoxFishingRods.SelectedIndexChanged += comboBoxFishingRods_SelectedIndexChanged;
             // 
@@ -835,6 +1017,60 @@
             tabControl1.Size = new Size(532, 273);
             tabControl1.TabIndex = 9;
             // 
+            // label29
+            // 
+            label29.Font = new Font("Segoe UI", 7F);
+            label29.Location = new Point(492, 55);
+            label29.Name = "label29";
+            label29.Size = new Size(29, 13);
+            label29.TabIndex = 37;
+            label29.Text = "500g";
+            // 
+            // label30
+            // 
+            label30.Font = new Font("Segoe UI", 7F);
+            label30.Location = new Point(492, 83);
+            label30.Name = "label30";
+            label30.Size = new Size(29, 13);
+            label30.TabIndex = 38;
+            label30.Text = "500g";
+            // 
+            // label31
+            // 
+            label31.Font = new Font("Segoe UI", 7F);
+            label31.Location = new Point(492, 108);
+            label31.Name = "label31";
+            label31.Size = new Size(29, 13);
+            label31.TabIndex = 39;
+            label31.Text = "500g";
+            // 
+            // label32
+            // 
+            label32.Font = new Font("Segoe UI", 7F);
+            label32.Location = new Point(492, 137);
+            label32.Name = "label32";
+            label32.Size = new Size(29, 13);
+            label32.TabIndex = 40;
+            label32.Text = "600g";
+            // 
+            // label33
+            // 
+            label33.Font = new Font("Segoe UI", 7F);
+            label33.Location = new Point(492, 191);
+            label33.Name = "label33";
+            label33.Size = new Size(29, 13);
+            label33.TabIndex = 41;
+            label33.Text = "800g";
+            // 
+            // label34
+            // 
+            label34.Font = new Font("Segoe UI", 7F);
+            label34.Location = new Point(492, 163);
+            label34.Name = "label34";
+            label34.Size = new Size(29, 13);
+            label34.TabIndex = 42;
+            label34.Text = "700g";
+            // 
             // FishingLoad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -937,5 +1173,23 @@
         private TextBox textBoxAvailableGold;
         private Label label22;
         private Button buttonPurchase;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private Label label26;
+        private Label label27;
+        private Label label28;
+        private Button buttonEHCase;
+        private Button buttonHCase;
+        private Button buttonMHCase;
+        private Button buttonMCase;
+        private Button buttonLCase;
+        private Button buttonULCase;
+        private Label label30;
+        private Label label29;
+        private Label label31;
+        private Label label32;
+        private Label label34;
+        private Label label33;
     }
 }
