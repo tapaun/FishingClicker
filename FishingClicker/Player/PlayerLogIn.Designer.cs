@@ -40,20 +40,21 @@
             // 
             // loginButton
             // 
-            loginButton.BackColor = Color.SteelBlue;
+            loginButton.BackColor = Color.Gray;
             loginButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             loginButton.ForeColor = SystemColors.ButtonFace;
             loginButton.Location = new Point(248, 213);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(108, 32);
             loginButton.TabIndex = 0;
+            loginButton.TabStop = false;
             loginButton.Text = "Log In";
             loginButton.UseVisualStyleBackColor = false;
             loginButton.Click += loginButton_Click;
             // 
             // signupButton
             // 
-            signupButton.BackColor = Color.SteelBlue;
+            signupButton.BackColor = Color.Gray;
             signupButton.FlatAppearance.BorderColor = Color.Black;
             signupButton.FlatAppearance.BorderSize = 3;
             signupButton.FlatAppearance.MouseDownBackColor = Color.Turquoise;
@@ -64,6 +65,7 @@
             signupButton.Name = "signupButton";
             signupButton.Size = new Size(108, 32);
             signupButton.TabIndex = 1;
+            signupButton.TabStop = false;
             signupButton.Text = "Sign Up";
             signupButton.UseVisualStyleBackColor = false;
             signupButton.Click += signupButton_Click;
@@ -131,7 +133,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SlateBlue;
+            BackColor = Color.DimGray;
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(passwordTxtbox);

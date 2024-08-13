@@ -49,7 +49,7 @@ namespace FishingClicker.Equipment
         //Method for displaying a fishing rod's information
         public override string ToString()
         {
-            return base.ToString() + $" Name: {EquipmentName} \n Strength: {Strength} \n Rod Action: {Category} \n";
+            return base.ToString() + $" Name: {EquipmentName} Strength: {Strength} Rod Action: {Category}";
         }
         //Method for deciding how far a CastLine would go depending on variables below, used to determine the type of fish you'd be able to get
         public decimal CastLine() =>
@@ -116,12 +116,12 @@ namespace FishingClicker.Equipment
             if (player.PlayerGold >= Price)
             {
                 var rollingRods = new List<FishingRod>();
-                if (player.FishingRod.All(x => rollingRods.Any(y => x.ToString() == y.ToString()))) return;  
+                if (player.FishingRod.All(x => rollingRods.Any(y => x.EquipmentName == y.EquipmentName))) return;  
                 rollingRods = DiceRoll switch
                 {
                     (<= 50) => ReadFromFile("beginnerRods.json"),
                     (<= 90) => ReadFromFile("intermediateRods.json"),
-                    (>= 90) => ReadFromFile("expertRods.json")
+                    (> 90)  => ReadFromFile("expertRods.json")
                 };
                 player.PlayerGold -= Price;
                 int rodCount = rollingRods.Count;

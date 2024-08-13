@@ -89,6 +89,23 @@ namespace FishingClicker
         private void FishingLoad_Load(object sender, EventArgs e)
         {
             labelsDisable(label1);
+            Bitmap bitmap = new Bitmap("runecircle.png");
+            bitmap.MakeTransparent(Color.White);
+            for (int x = 0; x < bitmap.Width; x++)
+            {
+                for (int y = 0; y < bitmap.Height; y++)
+                {
+                    Color currentColor = bitmap.GetPixel(x, y);
+                    if (currentColor.R >= 220 && currentColor.G >= 220 && currentColor.B >= 220)
+                    {
+                        bitmap.SetPixel(x, y, Color.Transparent);
+                    }
+                }
+            }
+            pictureBox2.Image = bitmap;
+            pictureBox3.Image = bitmap;
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
         }
         #region Navigation Buttons
         //Fishing tab
@@ -240,10 +257,11 @@ namespace FishingClicker
         {
             if(player!=null) player.FormClosing(); 
         }
+        //Open case button.MouseClick
         private void caseButton_Click(object sender, EventArgs e)
         {
-            Button? clickedButton = sender as Button;
-            var caseClass = (Case)Activator.CreateInstance((sender as Button).Tag.GetType());
+            Button clickedButton = sender as Button;
+            var caseClass = clickedButton.Tag as Case;
             if(clickedButton!=null)
             {
                 caseClass.FishingRodOpened(player);

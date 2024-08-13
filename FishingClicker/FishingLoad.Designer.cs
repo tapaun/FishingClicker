@@ -43,7 +43,15 @@
             playerLogIn = new PlayerLogIn();
             tabPage5 = new TabPage();
             tabPage4 = new TabPage();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             tabPage3 = new TabPage();
+            label34 = new Label();
+            label33 = new Label();
+            label32 = new Label();
+            label31 = new Label();
+            label30 = new Label();
+            label29 = new Label();
             buttonEHCase = new Button();
             buttonHCase = new Button();
             buttonMHCase = new Button();
@@ -106,13 +114,10 @@
             labelNotification = new Label();
             pictureBox1 = new PictureBox();
             tabControl1 = new TabControl();
-            label29 = new Label();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            label34 = new Label();
             panel1.SuspendLayout();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabPage3.SuspendLayout();
             tabPage2.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -124,7 +129,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.RoyalBlue;
+            panel1.BackColor = Color.Black;
             panel1.Controls.Add(userInfo);
             panel1.Controls.Add(theShrine);
             panel1.Controls.Add(theInventory);
@@ -137,7 +142,7 @@
             // 
             // userInfo
             // 
-            userInfo.BackColor = Color.Violet;
+            userInfo.BackColor = Color.SlateGray;
             userInfo.FlatStyle = FlatStyle.Flat;
             userInfo.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             userInfo.ForeColor = Color.White;
@@ -151,7 +156,7 @@
             // 
             // theShrine
             // 
-            theShrine.BackColor = Color.Violet;
+            theShrine.BackColor = Color.SlateGray;
             theShrine.FlatStyle = FlatStyle.Flat;
             theShrine.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             theShrine.ForeColor = Color.White;
@@ -165,7 +170,7 @@
             // 
             // theInventory
             // 
-            theInventory.BackColor = Color.Violet;
+            theInventory.BackColor = Color.SlateGray;
             theInventory.FlatStyle = FlatStyle.Flat;
             theInventory.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             theInventory.ForeColor = Color.White;
@@ -179,7 +184,7 @@
             // 
             // theShop
             // 
-            theShop.BackColor = Color.Violet;
+            theShop.BackColor = Color.SlateGray;
             theShop.FlatStyle = FlatStyle.Flat;
             theShop.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             theShop.ForeColor = Color.White;
@@ -193,7 +198,7 @@
             // 
             // theWater
             // 
-            theWater.BackColor = Color.Violet;
+            theWater.BackColor = Color.SlateGray;
             theWater.FlatStyle = FlatStyle.Flat;
             theWater.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             theWater.ForeColor = Color.White;
@@ -208,7 +213,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.MediumPurple;
+            label1.BackColor = Color.Black;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(145, 25);
@@ -220,7 +225,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.MediumPurple;
+            label2.BackColor = Color.Black;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(145, 75);
@@ -232,7 +237,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.MediumPurple;
+            label3.BackColor = Color.Black;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
             label3.Location = new Point(145, 125);
@@ -244,7 +249,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.MediumPurple;
+            label4.BackColor = Color.Black;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
             label4.Location = new Point(145, 175);
@@ -256,7 +261,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.MediumPurple;
+            label5.BackColor = Color.Black;
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
             label5.Location = new Point(145, 225);
@@ -267,10 +272,10 @@
             // 
             // playerLogIn
             // 
-            playerLogIn.BackColor = Color.SlateBlue;
-            playerLogIn.Location = new Point(0, -11);
+            playerLogIn.BackColor = Color.FromArgb(64, 64, 64);
+            playerLogIn.Location = new Point(0, -18);
             playerLogIn.Name = "playerLogIn";
-            playerLogIn.Size = new Size(719, 317);
+            playerLogIn.Size = new Size(719, 324);
             playerLogIn.TabIndex = 10;
             // 
             // tabPage5
@@ -284,16 +289,34 @@
             // 
             // tabPage4
             // 
+            tabPage4.BackColor = Color.DarkGray;
+            tabPage4.Controls.Add(pictureBox3);
+            tabPage4.Controls.Add(pictureBox2);
             tabPage4.Location = new Point(4, 4);
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new Size(524, 245);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "The Shrine";
-            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(271, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(250, 239);
+            pictureBox3.TabIndex = 1;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(250, 239);
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // tabPage3
             // 
-            tabPage3.BackColor = Color.Pink;
+            tabPage3.BackColor = Color.Silver;
             tabPage3.Controls.Add(label34);
             tabPage3.Controls.Add(label33);
             tabPage3.Controls.Add(label32);
@@ -342,9 +365,75 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Shop";
             // 
+            // label34
+            // 
+            label34.BackColor = Color.Black;
+            label34.Font = new Font("Segoe UI", 7F);
+            label34.ForeColor = Color.White;
+            label34.Location = new Point(492, 163);
+            label34.Name = "label34";
+            label34.Size = new Size(29, 13);
+            label34.TabIndex = 42;
+            label34.Text = "700g";
+            // 
+            // label33
+            // 
+            label33.BackColor = Color.Black;
+            label33.Font = new Font("Segoe UI", 7F);
+            label33.ForeColor = Color.White;
+            label33.Location = new Point(492, 191);
+            label33.Name = "label33";
+            label33.Size = new Size(29, 13);
+            label33.TabIndex = 41;
+            label33.Text = "800g";
+            // 
+            // label32
+            // 
+            label32.BackColor = Color.Black;
+            label32.Font = new Font("Segoe UI", 7F);
+            label32.ForeColor = Color.White;
+            label32.Location = new Point(492, 137);
+            label32.Name = "label32";
+            label32.Size = new Size(29, 13);
+            label32.TabIndex = 40;
+            label32.Text = "600g";
+            // 
+            // label31
+            // 
+            label31.BackColor = Color.Black;
+            label31.Font = new Font("Segoe UI", 7F);
+            label31.ForeColor = Color.White;
+            label31.Location = new Point(492, 108);
+            label31.Name = "label31";
+            label31.Size = new Size(29, 13);
+            label31.TabIndex = 39;
+            label31.Text = "500g";
+            // 
+            // label30
+            // 
+            label30.BackColor = Color.Black;
+            label30.Font = new Font("Segoe UI", 7F);
+            label30.ForeColor = Color.White;
+            label30.Location = new Point(492, 83);
+            label30.Name = "label30";
+            label30.Size = new Size(29, 13);
+            label30.TabIndex = 38;
+            label30.Text = "500g";
+            // 
+            // label29
+            // 
+            label29.BackColor = Color.Black;
+            label29.Font = new Font("Segoe UI", 7F);
+            label29.ForeColor = Color.White;
+            label29.Location = new Point(492, 55);
+            label29.Name = "label29";
+            label29.Size = new Size(29, 13);
+            label29.TabIndex = 37;
+            label29.Text = "500g";
+            // 
             // buttonEHCase
             // 
-            buttonEHCase.BackColor = Color.HotPink;
+            buttonEHCase.BackColor = Color.LightSlateGray;
             buttonEHCase.FlatStyle = FlatStyle.Flat;
             buttonEHCase.ForeColor = Color.White;
             buttonEHCase.Location = new Point(417, 185);
@@ -356,7 +445,7 @@
             // 
             // buttonHCase
             // 
-            buttonHCase.BackColor = Color.HotPink;
+            buttonHCase.BackColor = Color.LightSlateGray;
             buttonHCase.FlatStyle = FlatStyle.Flat;
             buttonHCase.ForeColor = Color.White;
             buttonHCase.Location = new Point(416, 157);
@@ -368,7 +457,7 @@
             // 
             // buttonMHCase
             // 
-            buttonMHCase.BackColor = Color.HotPink;
+            buttonMHCase.BackColor = Color.LightSlateGray;
             buttonMHCase.FlatStyle = FlatStyle.Flat;
             buttonMHCase.ForeColor = Color.White;
             buttonMHCase.Location = new Point(416, 130);
@@ -380,7 +469,7 @@
             // 
             // buttonMCase
             // 
-            buttonMCase.BackColor = Color.HotPink;
+            buttonMCase.BackColor = Color.LightSlateGray;
             buttonMCase.FlatStyle = FlatStyle.Flat;
             buttonMCase.ForeColor = Color.White;
             buttonMCase.Location = new Point(416, 102);
@@ -392,7 +481,7 @@
             // 
             // buttonLCase
             // 
-            buttonLCase.BackColor = Color.HotPink;
+            buttonLCase.BackColor = Color.LightSlateGray;
             buttonLCase.FlatStyle = FlatStyle.Flat;
             buttonLCase.ForeColor = Color.White;
             buttonLCase.Location = new Point(416, 75);
@@ -404,7 +493,7 @@
             // 
             // buttonULCase
             // 
-            buttonULCase.BackColor = Color.HotPink;
+            buttonULCase.BackColor = Color.LightSlateGray;
             buttonULCase.FlatStyle = FlatStyle.Flat;
             buttonULCase.ForeColor = Color.White;
             buttonULCase.Location = new Point(416, 49);
@@ -483,7 +572,7 @@
             // 
             // buttonPurchase
             // 
-            buttonPurchase.BackColor = Color.Orchid;
+            buttonPurchase.BackColor = Color.LightSlateGray;
             buttonPurchase.FlatStyle = FlatStyle.Flat;
             buttonPurchase.ForeColor = Color.White;
             buttonPurchase.Location = new Point(182, 197);
@@ -504,7 +593,7 @@
             // 
             // label22
             // 
-            label22.BackColor = Color.Orchid;
+            label22.BackColor = Color.Gray;
             label22.FlatStyle = FlatStyle.Flat;
             label22.Font = new Font("Segoe UI", 9F);
             label22.ForeColor = Color.White;
@@ -525,7 +614,7 @@
             // 
             // label21
             // 
-            label21.BackColor = Color.DarkOrchid;
+            label21.BackColor = Color.FromArgb(64, 64, 64);
             label21.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.White;
             label21.Location = new Point(3, 200);
@@ -538,6 +627,8 @@
             // labelDiamondValue
             // 
             labelDiamondValue.AutoSize = true;
+            labelDiamondValue.BackColor = Color.Black;
+            labelDiamondValue.ForeColor = Color.White;
             labelDiamondValue.Location = new Point(185, 161);
             labelDiamondValue.Name = "labelDiamondValue";
             labelDiamondValue.Size = new Size(35, 15);
@@ -547,6 +638,8 @@
             // labelGoldValue
             // 
             labelGoldValue.AutoSize = true;
+            labelGoldValue.BackColor = Color.Black;
+            labelGoldValue.ForeColor = Color.White;
             labelGoldValue.Location = new Point(185, 135);
             labelGoldValue.Name = "labelGoldValue";
             labelGoldValue.Size = new Size(35, 15);
@@ -556,6 +649,8 @@
             // labelIronValue
             // 
             labelIronValue.AutoSize = true;
+            labelIronValue.BackColor = Color.Black;
+            labelIronValue.ForeColor = Color.White;
             labelIronValue.Location = new Point(185, 107);
             labelIronValue.Name = "labelIronValue";
             labelIronValue.Size = new Size(35, 15);
@@ -565,6 +660,8 @@
             // labelStoneValue
             // 
             labelStoneValue.AutoSize = true;
+            labelStoneValue.BackColor = Color.Black;
+            labelStoneValue.ForeColor = Color.White;
             labelStoneValue.Location = new Point(185, 80);
             labelStoneValue.Name = "labelStoneValue";
             labelStoneValue.Size = new Size(35, 15);
@@ -574,6 +671,8 @@
             // labelWoodValue
             // 
             labelWoodValue.AutoSize = true;
+            labelWoodValue.BackColor = Color.Black;
+            labelWoodValue.ForeColor = Color.White;
             labelWoodValue.Location = new Point(185, 53);
             labelWoodValue.Name = "labelWoodValue";
             labelWoodValue.Size = new Size(35, 15);
@@ -618,7 +717,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.BackColor = Color.Orchid;
+            label20.BackColor = Color.FromArgb(64, 64, 64);
             label20.ForeColor = Color.White;
             label20.Location = new Point(108, 32);
             label20.Name = "label20";
@@ -661,7 +760,7 @@
             // 
             // label16
             // 
-            label16.BackColor = Color.Silver;
+            label16.BackColor = Color.DarkGray;
             label16.Font = new Font("Segoe UI", 11F);
             label16.Location = new Point(3, 76);
             label16.Name = "label16";
@@ -684,7 +783,7 @@
             // 
             // label14
             // 
-            label14.BackColor = Color.Violet;
+            label14.BackColor = Color.Black;
             label14.FlatStyle = FlatStyle.Flat;
             label14.ForeColor = Color.White;
             label14.Location = new Point(257, 46);
@@ -696,7 +795,7 @@
             // 
             // label13
             // 
-            label13.BackColor = Color.Plum;
+            label13.BackColor = Color.Gray;
             label13.FlatStyle = FlatStyle.Flat;
             label13.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
@@ -709,7 +808,7 @@
             // 
             // label12
             // 
-            label12.BackColor = Color.Plum;
+            label12.BackColor = Color.Gray;
             label12.FlatStyle = FlatStyle.Flat;
             label12.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
@@ -722,7 +821,7 @@
             // 
             // tabPage2
             // 
-            tabPage2.BackColor = Color.RoyalBlue;
+            tabPage2.BackColor = Color.Gray;
             tabPage2.Controls.Add(buttonEquipRod);
             tabPage2.Controls.Add(groupBox1);
             tabPage2.Controls.Add(groupBoxMaterial);
@@ -738,7 +837,7 @@
             // 
             // buttonEquipRod
             // 
-            buttonEquipRod.BackColor = Color.Violet;
+            buttonEquipRod.BackColor = Color.LightSteelBlue;
             buttonEquipRod.FlatStyle = FlatStyle.Flat;
             buttonEquipRod.ForeColor = Color.White;
             buttonEquipRod.Location = new Point(459, 60);
@@ -751,7 +850,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.CadetBlue;
+            groupBox1.BackColor = Color.FromArgb(64, 64, 64);
             groupBox1.Controls.Add(textBoxFRodCategory);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(textBoxFRodLevel);
@@ -851,7 +950,7 @@
             // 
             // groupBoxMaterial
             // 
-            groupBoxMaterial.BackColor = Color.CadetBlue;
+            groupBoxMaterial.BackColor = Color.FromArgb(64, 64, 64);
             groupBoxMaterial.Controls.Add(textBoxMValue);
             groupBoxMaterial.Controls.Add(textBoxMAmount);
             groupBoxMaterial.Controls.Add(label7);
@@ -926,7 +1025,7 @@
             // 
             // labelFishingRods
             // 
-            labelFishingRods.BackColor = Color.Violet;
+            labelFishingRods.BackColor = Color.Silver;
             labelFishingRods.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelFishingRods.ForeColor = Color.White;
             labelFishingRods.Location = new Point(259, 13);
@@ -938,7 +1037,7 @@
             // 
             // labelMaterials
             // 
-            labelMaterials.BackColor = Color.Violet;
+            labelMaterials.BackColor = Color.Silver;
             labelMaterials.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelMaterials.ForeColor = Color.White;
             labelMaterials.Location = new Point(22, 13);
@@ -966,9 +1065,9 @@
             // 
             // labelInfo
             // 
-            labelInfo.BackColor = Color.White;
+            labelInfo.BackColor = Color.DimGray;
             labelInfo.Font = new Font("Segoe UI", 7F);
-            labelInfo.ForeColor = Color.Black;
+            labelInfo.ForeColor = Color.White;
             labelInfo.Location = new Point(191, 225);
             labelInfo.Name = "labelInfo";
             labelInfo.Size = new Size(336, 19);
@@ -986,6 +1085,7 @@
             // 
             // labelNotification
             // 
+            labelNotification.BackColor = Color.FromArgb(64, 64, 64);
             labelNotification.Location = new Point(-1, -1);
             labelNotification.Name = "labelNotification";
             labelNotification.Size = new Size(524, 17);
@@ -1017,65 +1117,11 @@
             tabControl1.Size = new Size(532, 273);
             tabControl1.TabIndex = 9;
             // 
-            // label29
-            // 
-            label29.Font = new Font("Segoe UI", 7F);
-            label29.Location = new Point(492, 55);
-            label29.Name = "label29";
-            label29.Size = new Size(29, 13);
-            label29.TabIndex = 37;
-            label29.Text = "500g";
-            // 
-            // label30
-            // 
-            label30.Font = new Font("Segoe UI", 7F);
-            label30.Location = new Point(492, 83);
-            label30.Name = "label30";
-            label30.Size = new Size(29, 13);
-            label30.TabIndex = 38;
-            label30.Text = "500g";
-            // 
-            // label31
-            // 
-            label31.Font = new Font("Segoe UI", 7F);
-            label31.Location = new Point(492, 108);
-            label31.Name = "label31";
-            label31.Size = new Size(29, 13);
-            label31.TabIndex = 39;
-            label31.Text = "500g";
-            // 
-            // label32
-            // 
-            label32.Font = new Font("Segoe UI", 7F);
-            label32.Location = new Point(492, 137);
-            label32.Name = "label32";
-            label32.Size = new Size(29, 13);
-            label32.TabIndex = 40;
-            label32.Text = "600g";
-            // 
-            // label33
-            // 
-            label33.Font = new Font("Segoe UI", 7F);
-            label33.Location = new Point(492, 191);
-            label33.Name = "label33";
-            label33.Size = new Size(29, 13);
-            label33.TabIndex = 41;
-            label33.Text = "800g";
-            // 
-            // label34
-            // 
-            label34.Font = new Font("Segoe UI", 7F);
-            label34.Location = new Point(492, 163);
-            label34.Name = "label34";
-            label34.Size = new Size(29, 13);
-            label34.TabIndex = 42;
-            label34.Text = "700g";
-            // 
             // FishingLoad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(128, 128, 255);
+            BackColor = Color.Gray;
             ClientSize = new Size(716, 297);
             Controls.Add(playerLogIn);
             Controls.Add(tabControl1);
@@ -1092,6 +1138,9 @@
             FormClosed += FishingLoad_FormClosed;
             Load += FishingLoad_Load;
             panel1.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -1191,5 +1240,7 @@
         private Label label32;
         private Label label34;
         private Label label33;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
     }
 }
