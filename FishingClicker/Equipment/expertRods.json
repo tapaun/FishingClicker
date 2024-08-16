@@ -1,0 +1,92 @@
+[
+  {
+    "$type": "ExpertRod",
+    "Strength": 15,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Snuggle Starfish Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 15,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Hoppy Hippo Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 15,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Bubbly Bear Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 15,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Whisker Wobble Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 15,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Fluffy Fritter Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 20,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Puddle Popper Rod",
+    "MaterialVar": "Diamond"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 20,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Cuddle Cub Rod",
+    "MaterialVar": "Diamond"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 20,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Twinkle Toad Rod",
+    "MaterialVar": "Diamond"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 20,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Giggly Giraffe Rod",
+    "MaterialVar": "Diamond"
+  },
+  {
+    "$type": "ExpertRod",
+    "Strength": 20,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelThree",
+    "EquipmentName": "Snuggle Star Rod",
+    "MaterialVar": "Diamond"
+  }
+]

@@ -1,0 +1,724 @@
+[
+  {
+    "PlayerName": "matej",
+    "PlayerPassword": "matej",
+    "PlayerLevel": 1,
+    "PlayerXP": 0,
+    "PlayerGold": 100,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 10,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 5,
+        "MaterialVar": "Stone"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "diogo",
+    "PlayerPassword": "diogo",
+    "PlayerLevel": 4,
+    "PlayerXP": 649,
+    "PlayerGold": 1824.45,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 10,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 5,
+        "MaterialVar": "Stone"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "tester1",
+    "PlayerPassword": "tester1",
+    "PlayerLevel": 1,
+    "PlayerXP": 200,
+    "PlayerGold": 116.90,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 11,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 5,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Iron"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Gold"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Diamond"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "ogi",
+    "PlayerPassword": "ogi",
+    "PlayerLevel": 1,
+    "PlayerXP": 28,
+    "PlayerGold": 102.4,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 1122,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 5,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Iron"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Gold"
+      },
+      {
+        "MaterialsAmount": 0,
+        "MaterialVar": "Diamond"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "tester2",
+    "PlayerPassword": "tester2",
+    "PlayerLevel": 1,
+    "PlayerXP": 84,
+    "PlayerGold": 107.0,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 10,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 7,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 1,
+        "MaterialVar": "Gold"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "roomba",
+    "PlayerPassword": "roomba",
+    "PlayerLevel": 2,
+    "PlayerXP": 37,
+    "PlayerGold": 427.30,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 12,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 7,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 2,
+        "MaterialVar": "Iron"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "tester3",
+    "PlayerPassword": "tester3",
+    "PlayerLevel": 1,
+    "PlayerXP": 136,
+    "PlayerGold": 111.40,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 10,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 22,
+        "MaterialVar": "Stone"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "tester4",
+    "PlayerPassword": "tester4",
+    "PlayerLevel": 1,
+    "PlayerXP": 148,
+    "PlayerGold": 12.4,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 11,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 5,
+        "MaterialVar": "Stone"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      }
+    ],
+    "EquippedRod": null
+  },
+  {
+    "PlayerName": "segi",
+    "PlayerPassword": "segi",
+    "PlayerLevel": 6,
+    "PlayerXP": 484,
+    "PlayerGold": 2988216.15,
+    "PlayerMaterials": [
+      {
+        "MaterialsAmount": 85,
+        "MaterialVar": "Wood"
+      },
+      {
+        "MaterialsAmount": 122,
+        "MaterialVar": "Stone"
+      },
+      {
+        "MaterialsAmount": 52,
+        "MaterialVar": "Iron"
+      },
+      {
+        "MaterialsAmount": 93,
+        "MaterialVar": "Gold"
+      },
+      {
+        "MaterialsAmount": 1348,
+        "MaterialVar": "Diamond"
+      }
+    ],
+    "FishingRod": [
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Basic Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 2,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Common Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 10,
+        "Category": "Ultralight",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Pipsqueak Pika Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "Ultralight",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Wibble Wobble Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Poppy Puffin Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 10,
+        "Category": "Heavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Dizzy Daisy Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Giggly Goose Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 10,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Wiggly Worm Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Snuggle Bug Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 15,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Snuggle Starfish Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Dazzle Duck Rod",
+        "MaterialVar": "Stone"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Cozy Coyote Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Glittery Glow Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Wobble Wombat Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Doodle Duckling Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Wobble Waddle Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 20,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Snuggle Star Rod",
+        "MaterialVar": "Diamond"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Twirly Twinkle Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Flappy Flounder Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 20,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Cuddle Cub Rod",
+        "MaterialVar": "Diamond"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Gummy Grin Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 10,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Nibble Noodle Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Snuggle Nugget Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 15,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Hoppy Hippo Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 20,
+        "Category": "Light",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Twinkle Toad Rod",
+        "MaterialVar": "Diamond"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Waggly Wagtail Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Popcorn Puff Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 10,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Rare",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Tickle Tiger Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Taffy Tapper Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Fluffy Feather Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "Medium",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Silly Sausage Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "Ultralight",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Chipper Chipmunk Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "BeginnerRod",
+        "Strength": 4,
+        "Category": "Ultralight",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Sprinkle Star Rod",
+        "MaterialVar": "Wood"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 15,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Bubbly Bear Rod",
+        "MaterialVar": "Gold"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Fluffy Fox Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelTwo",
+        "EquipmentName": "Munchy Marmoset Rod",
+        "MaterialVar": "Iron"
+      },
+      {
+        "$type": "ExpertRod",
+        "Strength": 20,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelThree",
+        "EquipmentName": "Puddle Popper Rod",
+        "MaterialVar": "Diamond"
+      },
+      {
+        "$type": "IntermediateRod",
+        "Strength": 8,
+        "Category": "ExtraHeavy",
+        "RarityValue": "Common",
+        "ItemLevel": "LevelOne",
+        "EquipmentName": "Squeezy Squeeze Rod",
+        "MaterialVar": "Iron"
+      }
+    ],
+    "EquippedRod": {
+      "$type": "IntermediateRod",
+      "Strength": 10,
+      "Category": "ExtraHeavy",
+      "RarityValue": "Common",
+      "ItemLevel": "LevelTwo",
+      "EquipmentName": "Nibble Noodle Rod",
+      "MaterialVar": "Gold"
+    }
+  }
+]

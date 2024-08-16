@@ -1,0 +1,371 @@
+[
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Cuddle Cloud Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Snuggle Sprout Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Fluffy Feather Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Bouncy Bee Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wobble Wombat Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Puffy Penguin Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Ticklish Toad Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Glitter Gnome Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Snickerdoodle Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Whisker Wiggle Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Tippy Tap Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Sprinkle Star Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Silly Sausage Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Puddle Duck Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Doodle Dragon Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Fuzzy Fawn Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Cuddly Caterpillar Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Bumble Bear Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Cozy Kitten Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Chirpy Chick Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Flopsy Fluff Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Snappy Snapper Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wiggly Whale Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Hiccup Hedgehog Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Poppy Puffin Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Dandy Dodo Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Giggly Goose Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Squishy Squirrel Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Dizzy Doodle Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wibble Wobble Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Snuggle Nugget Rod",
+    "MaterialVar": "Wood"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Bubbly Bunny Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wiggly Worm Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Dazzle Duck Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Twinkle Turtle Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Sparkle Snail Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Pudding Puff Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Jellybean Jiggle Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Giggle Goblin Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Squeaky Squirrel Rod",
+    "MaterialVar": "Stone"
+  },
+  {
+    "$type": "BeginnerRod",
+    "Strength": 4,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Fizzy Frog Rod",
+    "MaterialVar": "Stone"
+  }
+]

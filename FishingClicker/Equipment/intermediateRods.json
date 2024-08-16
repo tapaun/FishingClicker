@@ -1,0 +1,182 @@
+[
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Taffy Tapper Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Chipper Chipmunk Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Glittery Glow Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Popcorn Puff Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Waggly Wagtail Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Squeezy Squeeze Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Fluffy Fox Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Doodle Duckling Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Munchy Marmoset Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Snuggle Bug Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Twirly Twinkle Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Flappy Flounder Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Cozy Coyote Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wobble Waddle Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 8,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Gummy Grin Rod",
+    "MaterialVar": "Iron"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 10,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Tickle Tiger Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 10,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Pipsqueak Pika Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 10,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Dizzy Daisy Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 10,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Wiggly Worm Rod",
+    "MaterialVar": "Gold"
+  },
+  {
+    "$type": "IntermediateRod",
+    "Strength": 10,
+    "Category": "Light",
+    "RarityValue": "Common",
+    "ItemLevel": "LevelOne",
+    "EquipmentName": "Nibble Noodle Rod",
+    "MaterialVar": "Gold"
+  }
+]

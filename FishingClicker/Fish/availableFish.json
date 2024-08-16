@@ -1,0 +1,482 @@
+[
+  {
+    "Name": "Silly Shallow Fish 1",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 0.4
+  },
+  {
+    "Name": "Silly Shallow Fish 2",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 0.8
+  },
+  {
+    "Name": "Silly Shallow Fish 3",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 1.2
+  },
+  {
+    "Name": "Silly Shallow Fish 4",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 1.6
+  },
+  {
+    "Name": "Silly Shallow Fish 5",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 2.0
+  },
+  {
+    "Name": "Silly Shallow Fish 6",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 2.4
+  },
+  {
+    "Name": "Silly Shallow Fish 7",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 2.8
+  },
+  {
+    "Name": "Silly Shallow Fish 8",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 3.2
+  },
+  {
+    "Name": "Silly Shallow Fish 9",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 3.6
+  },
+  {
+    "Name": "Silly Shallow Fish 10",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 4.0
+  },
+  {
+    "Name": "Silly Shallow Fish 11",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 4.4
+  },
+  {
+    "Name": "Silly Shallow Fish 12",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 4.8
+  },
+  {
+    "Name": "Silly Shallow Fish 13",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 5.2
+  },
+  {
+    "Name": "Silly Shallow Fish 14",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 5.6
+  },
+  {
+    "Name": "Silly Shallow Fish 15",
+    "FishiesRarity": "Puddle",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 6.0
+  },
+  {
+    "Name": "Silly Midwater Fish 1",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 0.6
+  },
+  {
+    "Name": "Silly Midwater Fish 2",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 1.2
+  },
+  {
+    "Name": "Silly Midwater Fish 3",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 1.8
+  },
+  {
+    "Name": "Silly Midwater Fish 4",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 2.4
+  },
+  {
+    "Name": "Silly Midwater Fish 5",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 3.0
+  },
+  {
+    "Name": "Silly Midwater Fish 6",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 3.6
+  },
+  {
+    "Name": "Silly Midwater Fish 7",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 4.2
+  },
+  {
+    "Name": "Silly Midwater Fish 8",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 4.8
+  },
+  {
+    "Name": "Silly Midwater Fish 9",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 5.4
+  },
+  {
+    "Name": "Silly Midwater Fish 10",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 6.0
+  },
+  {
+    "Name": "Silly Midwater Fish 11",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 6.6
+  },
+  {
+    "Name": "Silly Midwater Fish 12",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 7.2
+  },
+  {
+    "Name": "Silly Midwater Fish 13",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 7.8
+  },
+  {
+    "Name": "Silly Midwater Fish 14",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 8.4
+  },
+  {
+    "Name": "Silly Midwater Fish 15",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 9.0
+  },
+  {
+    "Name": "Silly Deepwater Fish 1",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 0.8
+  },
+  {
+    "Name": "Silly Deepwater Fish 2",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 1.6
+  },
+  {
+    "Name": "Silly Deepwater Fish 3",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 2.4
+  },
+  {
+    "Name": "Silly Deepwater Fish 4",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 3.2
+  },
+  {
+    "Name": "Silly Deepwater Fish 5",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 4.0
+  },
+  {
+    "Name": "Silly Deepwater Fish 6",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 4.8
+  },
+  {
+    "Name": "Silly Deepwater Fish 7",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 5.6
+  },
+  {
+    "Name": "Silly Deepwater Fish 8",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 6.4
+  },
+  {
+    "Name": "Silly Deepwater Fish 9",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 7.2
+  },
+  {
+    "Name": "Silly Deepwater Fish 10",
+    "FishiesRarity": "River",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 8.0
+  },
+  {
+    "Name": "Crazy Shallow Fish 1",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 1.15
+  },
+  {
+    "Name": "Crazy Shallow Fish 2",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 2.30
+  },
+  {
+    "Name": "Crazy Shallow Fish 3",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 3.45
+  },
+  {
+    "Name": "Crazy Shallow Fish 4",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 4.60
+  },
+  {
+    "Name": "Crazy Shallow Fish 5",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 5.75
+  },
+  {
+    "Name": "Crazy Shallow Fish 6",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 6.90
+  },
+  {
+    "Name": "Crazy Shallow Fish 7",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 8.05
+  },
+  {
+    "Name": "Crazy Shallow Fish 8",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 9.20
+  },
+  {
+    "Name": "Crazy Shallow Fish 9",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 10.35
+  },
+  {
+    "Name": "Crazy Shallow Fish 10",
+    "FishiesRarity": "Creek",
+    "FishiesDeptyh": "Shallow",
+    "Weight": 11.50
+  },
+  {
+    "Name": "Crazy Midwater Fish 1",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 1.2
+  },
+  {
+    "Name": "Crazy Midwater Fish 2",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 2.4
+  },
+  {
+    "Name": "Crazy Midwater Fish 3",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 3.6
+  },
+  {
+    "Name": "Crazy Midwater Fish 4",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 4.8
+  },
+  {
+    "Name": "Crazy Midwater Fish 5",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 6.0
+  },
+  {
+    "Name": "Crazy Midwater Fish 6",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 7.2
+  },
+  {
+    "Name": "Crazy Midwater Fish 7",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 8.4
+  },
+  {
+    "Name": "Crazy Midwater Fish 8",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 9.6
+  },
+  {
+    "Name": "Crazy Midwater Fish 9",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 10.8
+  },
+  {
+    "Name": "Crazy Midwater Fish 10",
+    "FishiesRarity": "Lake",
+    "FishiesDeptyh": "Midwater",
+    "Weight": 12.0
+  },
+  {
+    "Name": "Crazy UltraDeepwater Fish 1",
+    "FishiesRarity": "Sea",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 1.25
+  },
+  {
+    "Name": "Crazy UltraDeepwater Fish 2",
+    "FishiesRarity": "Sea",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 2.50
+  },
+  {
+    "Name": "Crazy UltraDeepwater Fish 3",
+    "FishiesRarity": "Sea",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 3.75
+  },
+  {
+    "Name": "Crazy UltraDeepwater Fish 4",
+    "FishiesRarity": "Sea",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 5.00
+  },
+  {
+    "Name": "Crazy UltraDeepwater Fish 5",
+    "FishiesRarity": "Sea",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 6.25
+  },
+  {
+    "Name": "Insane Deepwater Fish 1",
+    "FishiesRarity": "Exotic",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 6
+  },
+  {
+    "Name": "Insane Deepwater Fish 2",
+    "FishiesRarity": "Exotic",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 10
+  },
+  {
+    "Name": "Insane Deepwater Fish 3",
+    "FishiesRarity": "Exotic",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 14
+  },
+  {
+    "Name": "Insane Deepwater Fish 4",
+    "FishiesRarity": "Exotic",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 18
+  },
+  {
+    "Name": "Insane Deepwater Fish 5",
+    "FishiesRarity": "Exotic",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 22
+  },
+  {
+    "Name": "Insane UltraDeepwater Fish 1",
+    "FishiesRarity": "Tropical",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 6.5
+  },
+  {
+    "Name": "Insane UltraDeepwater Fish 2",
+    "FishiesRarity": "Tropical",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 11.0
+  },
+  {
+    "Name": "Insane UltraDeepwater Fish 3",
+    "FishiesRarity": "Tropical",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 15.5
+  },
+  {
+    "Name": "Insane UltraDeepwater Fish 4",
+    "FishiesRarity": "Tropical",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 20.0
+  },
+  {
+    "Name": "Insane UltraDeepwater Fish 5",
+    "FishiesRarity": "Tropical",
+    "FishiesDeptyh": "UltraDeepwater",
+    "Weight": 24.5
+  },
+  {
+    "Name": "Insane Fish 1",
+    "FishiesRarity": "Ocean",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 7
+  },
+  {
+    "Name": "Insane Fish 2",
+    "FishiesRarity": "Ocean",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 12
+  },
+  {
+    "Name": "Insane Fish 3",
+    "FishiesRarity": "Ocean",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 17
+  },
+  {
+    "Name": "Insane Fish 4",
+    "FishiesRarity": "Ocean",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 22
+  },
+  {
+    "Name": "Insane Fish 5",
+    "FishiesRarity": "Ocean",
+    "FishiesDeptyh": "Deepwater",
+    "Weight": 27
+  }
+]
