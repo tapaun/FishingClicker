@@ -152,6 +152,7 @@
             userInfo.TabIndex = 8;
             userInfo.Text = "User Info";
             userInfo.UseVisualStyleBackColor = false;
+            userInfo.Visible = false;
             userInfo.Click += userInfo_Click;
             // 
             // theShrine
@@ -166,6 +167,7 @@
             theShrine.TabIndex = 7;
             theShrine.Text = "The Shrine";
             theShrine.UseVisualStyleBackColor = false;
+            theShrine.Visible = false;
             theShrine.Click += theShrine_Click;
             // 
             // theInventory
@@ -273,9 +275,9 @@
             // playerLogIn
             // 
             playerLogIn.BackColor = Color.FromArgb(64, 64, 64);
-            playerLogIn.Location = new Point(0, -18);
+            playerLogIn.Location = new Point(12, 281);
             playerLogIn.Name = "playerLogIn";
-            playerLogIn.Size = new Size(719, 324);
+            playerLogIn.Size = new Size(707, 25);
             playerLogIn.TabIndex = 10;
             // 
             // tabPage5

@@ -12,17 +12,24 @@ namespace FishingClicker
         public FishingLoad()
         {
             InitializeComponent();
-            #region event subs
+            // event subs
             playerLogIn.LoginSuccessful += PlayerLogIn_LoginSuccessful;
-            pictureBox1.MouseClick += tabPage1_MouseClick;
-            #region material buttons
-            textBoxWood.TextChanged    += materialButtons_TextChanged;
-            textBoxStone.TextChanged   += materialButtons_TextChanged;
-            textBoxIron.TextChanged    += materialButtons_TextChanged;
-            textBoxGold.TextChanged    += materialButtons_TextChanged;
-            textBoxDiamond.TextChanged += materialButtons_TextChanged;
-            #endregion
-            #region case buttons
+            pictureBox1.MouseClick      += tabPage1_MouseClick;
+
+            textBoxWood.TextChanged     += materialButtons_TextChanged;
+            textBoxStone.TextChanged    += materialButtons_TextChanged;
+            textBoxIron.TextChanged     += materialButtons_TextChanged;
+            textBoxGold.TextChanged     += materialButtons_TextChanged;
+            textBoxDiamond.TextChanged  += materialButtons_TextChanged;
+
+            buttonULCase.MouseClick     += caseButton_Click;
+            buttonLCase.MouseClick      += caseButton_Click;
+            buttonMCase.MouseClick      += caseButton_Click;
+            buttonMHCase.MouseClick     += caseButton_Click;
+            buttonHCase.MouseClick      += caseButton_Click;
+            buttonEHCase.MouseClick     += caseButton_Click;
+
+            // tag assignments
             buttonULCase.Tag = new UltraLightCase();
             buttonLCase.Tag  = new LightCase();
             buttonMCase.Tag  = new MediumCase();
@@ -30,15 +37,7 @@ namespace FishingClicker
             buttonHCase.Tag  = new HeavyCase();
             buttonEHCase.Tag = new ExtraHeavyCase();
 
-            buttonULCase.MouseClick += caseButton_Click;
-            buttonLCase.MouseClick  += caseButton_Click;
-            buttonMCase.MouseClick  += caseButton_Click;
-            buttonMHCase.MouseClick += caseButton_Click;
-            buttonHCase.MouseClick  += caseButton_Click;
-            buttonEHCase.MouseClick += caseButton_Click;
-            #endregion
-            #endregion
-            #region TabControl set up
+            // TabControl set up
             foreach (TabPage tabPage in tabControl1.TabPages)
             {
                 tabPageDictionary.Add(tabPage.Text, tabPage);
@@ -49,9 +48,9 @@ namespace FishingClicker
                 var firstTabPage = tabPageDictionary.First().Value;
                 tabControl1.TabPages.Add(firstTabPage);
             }
-            #endregion
         }
         #region UI cleaners and LogIn event
+        // Switch tab depending on button text
         private void ShowTabPageByButtonText(string buttonText)
         {
             if (tabPageDictionary.TryGetValue(buttonText, out TabPage? value))
@@ -60,6 +59,7 @@ namespace FishingClicker
                 tabControl1.TabPages.Add(value);
             }
         }
+        // PlayerLogIn event from the UserControl
         private void PlayerLogIn_LoginSuccessful(object sender, PlayerEventArgs e)
         {
             player = e.Player;
@@ -69,6 +69,7 @@ namespace FishingClicker
             MessageBox.Show($"Welcome, {player.PlayerName}!");
             playerLogIn.Dispose();
         }
+        // label Removers on button press
         private void labelsDisable(Label labelInUse)
         {
             Label labelToKeep = labelInUse;
@@ -78,6 +79,7 @@ namespace FishingClicker
                 else { control.Show(); }
             }
         }
+        // textBox cleaner on
         private void textBoxCleaner(TabPage tabPage)
         {
             foreach (Control control in tabPage.Controls)
@@ -89,6 +91,8 @@ namespace FishingClicker
         private void FishingLoad_Load(object sender, EventArgs e)
         {
             labelsDisable(label1);
+
+            //Image loader and cleaner
             Bitmap bitmap = new Bitmap("runecircle.png");
             bitmap.MakeTransparent(Color.White);
             for (int x = 0; x < bitmap.Width; x++)
@@ -214,7 +218,7 @@ namespace FishingClicker
             textBoxFRodCategory.Text = fRodAbout[3];
         }
         #endregion
-        #region mouse clicked 
+        // +1 On mouse click
         private async void tabPage1_MouseClick(object sender, MouseEventArgs e)
         {
             Fishies phishy = player.CatchFish();
@@ -251,7 +255,6 @@ namespace FishingClicker
             pictureBox1.Controls.Remove(labelClick);
             pictureBox1.Enabled = true;
         }
-        #endregion
         //Saving player data
         private void FishingLoad_FormClosed(object sender, FormClosedEventArgs e)
         {
